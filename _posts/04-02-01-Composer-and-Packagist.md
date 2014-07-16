@@ -24,6 +24,11 @@ Cela va télécharger `composer.phar` qui est une archive PHP binaire. Vous pouv
 dépendances. <strong>Attention : </strong> Si vous redirigez du code téléchargé directement dans un interpréteur, 
 veuillez d'abord lire le code en ligne pour confirmer qu'il est sûr.
 
+#### Installation sous Windows
+Pour les utilisateurs de Windows, la façon la plus pratique de mettre en place Composer est d'installer [ComposerSetup][6]
+qui va faire tout le travail pour vous (modification du `$PATH`) afin d'appeler l'utilitaire `composer` directement
+depuis votre terminal.
+
 ### Comment installer Composer (manuellement)
 
 Installer manuellement Composer est une technique avancée; Cependant, ils existent diverses raisons pour lesquelles un 
@@ -107,4 +112,5 @@ Le [Security Advisories Checker][4] est un service web et un outil en ligne de c
 [3]: https://www.versioneye.com/
 [4]: https://security.sensiolabs.org/
 [5]: http://getcomposer.org/doc/00-intro.md
+[6]: https://getcomposer.org/Composer-Setup.exe
 

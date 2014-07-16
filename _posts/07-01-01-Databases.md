@@ -13,15 +13,17 @@ par exemple, vous utilisez MySQL et un peu de MSSQL ou vous avez besoin de vous 
 ne pourrez utiliser les mêmes pilotes. Vous aurez besoin d'apprendre une nouvelle API pour chaque type de BDD &mdash; ce 
 qui peut devenir lourd.
 
-Une note supplémentaire sur les pilotes natifs: l'extension mysql pour PHP n'est plus activement développé et son statut 
-officiel depuis PHP 5.4.0 est "dépréciation à long terme" ("Long term deprecation"). Cela signifie qu'il sera retiré 
-d'ici quelques nouvelles moutures, il pourrait disparaître avec PHP 5.6 (ou tout ce qui viendrait après la 5.5). Si 
-vous utilisez `mysql_connect()` et `mysql_query()` dans votre application alors vous serez obligé à un moment ou à un autre 
-de faire de la refactorisation. La meilleure option est de prévoir sur votre planning le remplacement de l'utilisation 
-de mysql par mysqli ou PDO afin d'anticiper ce problème. _Si vous venez de démarrer le développement d'une nouvelle 
-application alors n'utilisez absolument pas l'extension mysql: utilisez plutôt l'[extension MySQLi][mysqli] ou PDO._
+## Extension MySQL
+
+L'extension [mysql] pour PHP est aujourd'hui au point mort et est [officiellement déprécié depuis PHP 5.5.0] ce qui
+signifie qu'il sera retiré dans les prochaines versions. Si vous utilisez n'importe quelles fonctions commençant par 
+`mysql_*` (comme `mysql_connect()`) dans votre application alors cela donnera des erreurs dans votre code. Vous serez 
+donc obligé de faire la transition vers [mysqli] ou [PDO].
+
+**Si vous venez de commencer votre projet alors n'utilisez surtout pas l'extension [mysql] mais préférez [mysqli] ou PDO**
 
 * [PHP: Choisir une API pour MySQL](http://php.net/manual/fr/mysqlinfo.api.choosing.php)
+* [Tutoriel sur les PDO pour les développeurs MySQL](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)
 
 ## PDO
 
@@ -44,7 +46,7 @@ $pdo->query("SELECT name FROM users WHERE id = " . $_GET['id']); // <-- NON!
 {% endhighlight %}
 
 Ce code est mauvais. Vous insérez un paramètre en brut directement dans une requête SQL. C'est la porte ouverte pour 
-le piratage. Imaginez un instant que si un pirate envoie un paramètre `id` en invoquant l'URL 
+le piratage comme [l'injection SQL](http://wiki.hashphp.org/Validation). Imaginez un instant que si un pirate envoie un paramètre `id` en invoquant l'URL 
 `http://domain.com/?id=1%3BDELETE+FROM+users`. Cela va définir la variable `$_GET['id']` à `1;DELETE FROM users` ce qui 
 va effacer l'ensemble de vos utilisateurs! Au lieu de faire ça, vous devriez nettoyer les entrées en utilisant la liaison 
 des paramètres avec PDO.
