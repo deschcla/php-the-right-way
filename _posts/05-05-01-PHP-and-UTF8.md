@@ -5,16 +5,18 @@ isChild: true
 
 ## Travailler avec de l'UTF-8 {#php_and_utf8_title}
 
-_This section was originally written by [Alex Cabal](https://alexcabal.com/) over at 
-[PHP Best Practices](https://phpbestpractices.org/#utf-8) and has been used as the basis for our own UTF-8 advice_.
+_Cette section a été traduite à partir de la page d'[Alex Cabal](https://alexcabal.com/) sur les 
+[meilleures pratiques PHP](https://phpbestpractices.org/#utf-8) et sert de base pour vous donner des conseils sur 
+l'utilisation de l'UTF-8_.
 
-### There's no one-liner. Be careful, detailed, and consistent.
+### Il n'y a pas de recette magique. Faites attention, soyez consciencieux et cohérent.
 
-Right now PHP does not support Unicode at a low level. There are ways to ensure that UTF-8 strings are processed OK, 
-but it's not easy, and it requires digging in to almost all levels of the web app, from HTML to SQL to PHP. We'll aim 
-for a brief, practical summary.
+Jusqu'à présent PHP n'inclut pas de support bas niveau pour l'unicode. Il existe des moyens de s'assurer que les chaînes 
+de caractères encodées en UTF-8 seront traitées correctement mais cela n'est pas facile et demande une attention particulière 
+tout le long de la chaîne de traitement, allant de la page HTML à vos requêtes SQL en passant par le PHP. Les prochains 
+paragraphes vont tenter de vous résumer la bonne approche à adopter face à du contenu Unicode.
 
-### UTF-8 at the PHP level
+### UTF-8 au niveau de PHP
 
 The basic string operations, like concatenating two strings and assigning strings to variables, don't need anything 
 special for UTF-8. However most string functions, like `strpos()` and `strlen()`, do need special consideration. These 
@@ -47,7 +49,7 @@ will use `mbstring` if it is available, and fall back to non UTF-8 functions if 
 [Multibyte String Extension]: http://php.net/manual/en/book.mbstring.php
 [patchwork/utf8]: https://packagist.org/packages/patchwork/utf8
 
-### UTF-8 at the Database level
+### UTF-8 au niveau de la base de données
 
 If your PHP script accesses MySQL, there's a chance your strings could be stored as non-UTF-8 strings in the database 
 even if you follow all of the precautions above.
@@ -59,7 +61,7 @@ example code below. This is _critically important_.
 Note that you must use the `utf8mb4` character set for complete UTF-8 support, not the `utf8` character set! See 
 Further Reading for why.
 
-### UTF-8 at the browser level
+### UTF-8 au niveau du navigateur web
 
 Use the `mb_http_output()` function to ensure that your PHP script outputs UTF-8 strings to your browser. 
 
@@ -124,7 +126,7 @@ header('Content-Type: text/html; charset=utf-8');
 </html>
 {% endhighlight %}
 
-### Further reading
+### Pour aller plus loin
 
 * [PHP Manual: String Operations](http://php.net/manual/en/language.operators.string.php)
 * [PHP Manual: String Functions](http://php.net/manual/en/ref.strings.php)
