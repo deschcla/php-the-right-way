@@ -5,8 +5,8 @@ title: Interagir avec les bases de données
 
 ## Interagir avec les bases de données
 
-When developers first start to learn PHP, they often end up mixing their database interaction up with their 
-presentation logic, using code that might look like this:
+Quand les développeurs commencent à utiliser PHP, ils finissent souvent par mélanger le code métier avec celui gérant 
+la base de données et l'affichage ce qui donne quelque chose de ce genre là :
 
 {% highlight php %}
 <ul>
@@ -17,11 +17,14 @@ foreach ($db->query('SELECT * FROM table') as $row) {
 </ul>
 {% endhighlight %}
 
-This is bad practice for all sorts of reasons, mainly that its hard to debug, hard to test, hard to read and it is going to output a lot of fields if you don't put a limit on there.
+Ceci est une mauvaise pratique pour toutes sortes de raisons, principalement du au fait qu'il est plus difficile à 
+déboguer, plus dur pour le lire et pour réaliser des tests.
 
-While there are many other solutions to doing this - depending on if you prefer [OOP](/#object-oriented-programming) or [functional programming](/#functional-programming) - there must be some element of separation. 
+Bien qu'il existe un certain nombre de solutions pour parer à ce problème comme l'utilisation de la [POO](/#object-oriented-programming) 
+ou bien la [programmation fonctionnelle](/#functional-programming), les parties logiques de votre code doivent être 
+clairement délimités.
 
-Consider the most basic step:
+Considérez l'exemple suivant :
 
 {% highlight php %}
 <?php
@@ -30,13 +33,15 @@ function getAllSomethings($db) {
 }
 
 foreach (getAllFoos() as $row) {
-    echo "<li>".$row['field1']." - ".$row['field1']."</li>"; // BAD!!
+    echo "<li>".$row['field1']." - ".$row['field1']."</li>"; // MAUVAIS!!
 }
 {% endhighlight %}
 
-That is a good start. Put those two items in two different files and you've got some clean separation.
+C'est un bon début. La séparation entre l'interaction avec la base de données et l'affichage est déjà bien distincts.
 
-Create a class to place that method in and you have a "Model". Create a simple `.php` file to put the presentation logic in and you have a "View", which is very nearly [MVC] - a common OOP architecture for most [frameworks](/#frameworks_title).
+Créez une classe où vous placerez les méthodes de votre code métier (votre "modèle"). Puis créez un fichier `.php` 
+qui contient la logique d'affichage (votre "vue") ce qui revient grosso-modo à utiliser le pattern MVC] - un modèle 
+d'architecture très courant dans la plupart des [frameworks](/#frameworks_title).
 
 **foo.php**
 
@@ -45,13 +50,13 @@ Create a class to place that method in and you have a "Model". Create a simple `
 
 $db = new PDO('mysql:host=localhost;dbname=testdb;charset=utf8', 'username', 'password');
 
-// Make your model available
+// Rendre votre modèle accessible
 include 'models/FooModel.php';
 
-// Create an instance
+// Création d'une instance
 $fooList = new FooModel($db);
 
-// Show the view
+// Affichage du résultat
 include 'views/foo-list.php';
 {% endhighlight %}
 
@@ -83,12 +88,13 @@ class Foo()
 <? endforeach ?>
 {% endhighlight %}
 
-This is essentially the same as what most modern frameworks are doing, all be it a little more manual. You might 
-not need to do all of that every time, but mixing together too much presentation logic and database interaction can be a real problem if you ever want to [unit-test](/#unit-testing) your application.
+C'est l'essentiel de ce que font les frameworks de façon plus manuelle. Vous n'avez pas forcément besoin de l'utiliser 
+constamment mais mélanger la présentation et la logique métier peut être un réel casse-tête si vous devez ensuite 
+utiliser les [tests unitaires](/#unit-testing) dans votre application.
 
-[PHPBridge] have a great resource called [Creating a Data Class] which covers a very similar topic, and is great 
-for developers just getting used to the concept of interacting with databases.
+[PHPBridge] contient un excellent tutoriel appellé [Creating a Data Class] qui couvre un sujet similaire à celui-ci et 
+permet de bien s'imprégner du concept d'interaction avec les bases de données.
 
-[MVC]: http://code.tutsplus.com/tutorials/mvc-for-noobs--net-10488
-[PHPBridge]: http://phpbridge.org/
-[Creating a Data Class]: http://phpbridge.org/intro-to-php/creating_a_data_class
+[MVC]: http://code.tutsplus.com/tutorials/mvc-for-noobs--net-10488 (en)
+[PHPBridge]: http://phpbridge.org/ (en)
+[Creating a Data Class]: http://phpbridge.org/intro-to-php/creating_a_data_class (en)

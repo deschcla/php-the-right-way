@@ -99,6 +99,7 @@ Plusieurs couches d'abstractions ont été construites en utilisant les standard
 [6]: https://github.com/auraphp/Aura.Sql
 [7]: http://propelorm.org/Propel/
 
+[PDO]: http://php.net/pdo
 [mysql]: http://php.net/mysql
 [mysqli]: http://php.net/mysqli
 [pgsql]: http://php.net/pgsql

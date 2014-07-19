@@ -22,7 +22,7 @@ faites en parallèle. Cela est spécialement important pour les serveurs virtuel
 ### Apache et PHP
 
 PHP et Apache ont une longue histoire commune. Apache est très largement configurable et un très grand nombre de 
-[modules](http://httpd.apache.org/docs/2.4/mod/) disponibles pour étendre ses fonctionnalités. C'est un choix populaire 
+[modules](http://httpd.apache.org/docs/2.4/mod/) sont disponibles pour étendre ses fonctionnalités. C'est un choix populaire 
 pour les serveurs mutualisés car il est très simple pour des frameworks PHP comme Wordpress de s'installer dessus. 
 Malheureusement, Apache utilise plus de ressources que nginx par défaut et ne peut gérer qu'un nombre limité de clients 
 à la fois.
