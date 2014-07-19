@@ -20,8 +20,8 @@ foreach ($db->query('SELECT * FROM table') as $row) {
 Ceci est une mauvaise pratique pour toutes sortes de raisons, principalement du au fait qu'il est plus difficile à 
 déboguer, plus dur pour le lire et pour réaliser des tests.
 
-Bien qu'il existe un certain nombre de solutions pour parer à ce problème comme l'utilisation de la [POO](/#object-oriented-programming) 
-ou bien la [programmation fonctionnelle](/#functional-programming), les parties logiques de votre code doivent être 
+Bien qu'il existe un certain nombre de solutions pour parer à ce problème comme l'utilisation de la [POO](#programmation_oriente_objet) 
+ou bien la [programmation fonctionnelle](#programmation_fonctionnelle), les parties logiques de votre code doivent être 
 clairement délimités.
 
 Considérez l'exemple suivant :
@@ -40,8 +40,8 @@ foreach (getAllFoos() as $row) {
 C'est un bon début. La séparation entre l'interaction avec la base de données et l'affichage est déjà bien distincts.
 
 Créez une classe où vous placerez les méthodes de votre code métier (votre "modèle"). Puis créez un fichier `.php` 
-qui contient la logique d'affichage (votre "vue") ce qui revient grosso-modo à utiliser le pattern MVC] - un modèle 
-d'architecture très courant dans la plupart des [frameworks](/#frameworks_title).
+qui contient la logique d'affichage (votre "vue") ce qui revient grosso-modo à utiliser le pattern [MVC] - un modèle 
+d'architecture très courant dans la plupart des [frameworks](#frameworks_title).
 
 **foo.php**
 
