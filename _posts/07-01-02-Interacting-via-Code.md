@@ -18,7 +18,7 @@ foreach ($db->query('SELECT * FROM table') as $row) {
 {% endhighlight %}
 
 Ceci est une mauvaise pratique pour toutes sortes de raisons, principalement du au fait qu'il est plus difficile à 
-déboguer, plus dur pour le lire et pour réaliser des tests.
+déboguer, à lire et pour réaliser des tests.
 
 Bien qu'il existe un certain nombre de solutions pour parer à ce problème comme l'utilisation de la [POO](#programmation_oriente_objet) 
 ou bien la [programmation fonctionnelle](#programmation_fonctionnelle), les parties logiques de votre code doivent être 
