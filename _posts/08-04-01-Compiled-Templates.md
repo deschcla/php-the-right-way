@@ -5,23 +5,24 @@ isChild: true
 
 ## Templates compilés {#templates compilés}
 
-While PHP has evolved into a mature, object oriented language, it
-[hasn't improved much](http://fabien.potencier.org/article/34/templating-engines-in-php) as a templating language.
-Compiled templates, like [Twig](http://twig.sensiolabs.org/) or [Smarty](http://www.smarty.net/), fill this void by
-offering a new syntax that has been geared specifically to templating. From automatic escaping, to inheritance and
-simplified control structures, compiled templates are designed to be easier to write, cleaner to read and safer to use.
-Compiled templates can even be shared across different languages, [Mustache](http://mustache.github.io/) being a good
-example of this. Since these templates must be compiled there is a slight performance hit, however this is very minimal
-when proper caching is used.
+Bien que le PHP ait évolué en un langage orienté objet mature, il ne s'est 
+[pas énormément amélioré](http://fabien.potencier.org/article/34/templating-engines-in-php) en tant que langage de 
+templating. Les templates compilés comme [Twig](http://twig.sensiolabs.org/) ou [Smarty](http://www.smarty.net/) 
+remplissent ce vide en offrant une nouvelle syntaxe, adaptée aux exigences des applications modernes. Cela va de 
+l'échappement automatique à l'héritage en passant par des structures de contrôles simplifiés. Ces templates ont été 
+conçus dans l'idée de faciliter l'écriture, la sécurité et la maintenance du code gérant la partie visuelle de l'application. 
+Les templates compilés peuvent même être partagés entre différents langages, [Mustache](http://mustache.github.io/) étant 
+un bon exemple de cela. Etant donné que ces templates doivent être compilés, il y a une légère baisse de performances. 
+Cependant, cela peut être anecdotique si un système de cache approprié est utilisé.
 
-Example of a compiled template (using the [Twig](http://twig.sensiolabs.org/) library):
+Exemple d'un template compilé (utilisant [Twig](http://twig.sensiolabs.org/)):
 
 {% highlight text %}
 {% raw %}
-{% include 'header.html' with {'title': 'User Profile'} %}
+{% include 'header.html' with {'title': 'Profil utilisateur'} %}
 
-<h1>User Profile</h1>
-<p>Hello, {{ name }}</p>
+<h1>Profil utilisateur</h1>
+<p>Bonjour, {{ name }}</p>
 
 {% include 'footer.html' %}
 {% endraw %}

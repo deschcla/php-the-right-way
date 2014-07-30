@@ -5,24 +5,24 @@ isChild: true
 
 ## Templates en PHP "pur" {#templates_en_php_pur_title}
 
-Plain PHP templates are simply templates that use native PHP code. They are a natural choice since PHP is actually a
-template language itself. That simply means that you can combine PHP code within other code, like HTML. This is
-beneficial to PHP developers as there is no new syntax to learn, they know the functions available to them, and their
-code editors already have PHP syntax highlighting and auto-completion built-in. Further, plain PHP templates tend to be
-very fast as no compiling stage is required.
+Les templates "pur" PHP sont ceux qui n'utilisent que du code PHP natif. C'est un choix naturel étant donné que PHP est 
+lui-même un language de templating. Ce terme signifie tout simplement que vous pouvez combiner du code PHP avec un autre 
+langage comme l'HTML. Cela peut être considéré comme un atout du fait même que les développeurs n'ont pas à apprendre 
+une syntaxe particulière. Par ailleurs, ces templates tendent à être plus rapide étant donné qu'il n'y a pas de phase de 
+compilation.
 
-Every modern PHP framework employs some kind of template system, most of which use plain PHP by default. Outside of
-frameworks, libraries like [Plates](http://platesphp.com/) or [Aura.View](https://github.com/auraphp/Aura.View) make
-working with plain PHP templates easier by offering modern template functionality such as inheritance, layouts and
-extensions.
+Tous les frameworks PHP modernes utilisent un système de templating, la plupart se basant uniquement sur la syntaxe PHP. 
+En dehors des frameworks, des bibliothèques comme [Plates](http://platesphp.com/) ou [Aura.View](https://github.com/auraphp/Aura.View) 
+rendent le travail avec les templates en PHP "pur" plus facile en offrant des fonctionnalités "modernes" telles que 
+l'héritage, le layout et des extensions.
 
-Example of a plain PHP template (using the [Plates](http://platesphp.com/) library):
+Exemple d'un template en PHP "pur" (utilisant [Plates](http://platesphp.com/)):
 
 {% highlight php %}
-<?php $this->insert('header', ['title' => 'User Profile']) ?>
+<?php $this->insert('header', ['title' => 'Profil utilisateur']) ?>
 
-<h1>User Profile</h1>
-<p>Hello, <?=$this->escape($name)?></p>
+<h1>Profil utilisateur</h1>
+<p>Bonjour, <?=$this->escape($name)?></p>
 
 <?php $this->insert('footer') ?>
 {% endhighlight %}

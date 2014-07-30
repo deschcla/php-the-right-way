@@ -5,17 +5,20 @@ isChild: true
 
 ## Bénéfices {#bénéfices_title}
 
-The main benefit to using templates is the clear separation they create between the presentation logic and the rest of
-your application. Templates have the sole responsibility of displaying formatted content. They are not responsible for
-data lookup, persistence or other more complex tasks. This leads to cleaner, more readable code which is especially
-helpful in a team environment where developers work on the server-side code (controllers, models) and designers work on
-the client-side code (markup).
+L'intérêt principal d'utiliser les templates tient dans la séparation nette qui se créée entre la logique de présentation 
+et le reste de l'application. Les templates sont seuls responsables de l'affichage du contenu formatté. Ils ne sont pas 
+responsables de la récupération des données, ni de la persistance ou d'autres tâches complexes. Cela conduit à du code 
+plus propre et plus lisible ce qui est particulièrement utile lorsque l'on travaille en équipe où l'on peut trouver 
+à la fois des développeurs côté serveur (responsable de la partie "contrôleurs, modèles") et les designers qui, eux, 
+travaillent sur le code côté client.
 
-Templates also improve the organization of presentation code. Templates are typically placed in a "views" folder, each
-defined within a single file. This approach encourages code reuse where larger blocks of code are broken into smaller,
-reusable pieces. For example, your site header and footer can each be defined as templates, which are then included
-before and after each page template.
+Les templates améliorent aussi l'organisation du code pour l'affichage. Ils sont généralement placés dans un répertoire 
+"views", chacun étant défini dans un seul fichier. Cette approche encourage la réutilisation de code où de larges blocs 
+de code sont découpés de façon à obtenir un ensemble de briques "atomiques" et utilisables plus facilement. Par exemple, 
+l'en-tête et le pied de page de votre site peuvent être défini dans des templates qui seront par la suite inclus 
+respectivement au début et à la fin de chaque template d'une page.
 
-Finally, depending on the library you use, templates can offer more security by automatically escaping user-generated
-content. Some libraries even offer sand-boxing, where template designers are only given access to white-listed
-variables and functions.
+Finalement, selon la bibliothèque que vous utilisez, les templates peuvent vous offrir plus de sécurité en échappant 
+par exemple automatiquement les variables définis par les entrées d'un utilisateur. Quelques bibliothèques vous offre 
+même la possibilité d'isoler les variables et les fonctions (on parlera de "sand-boxing") définis dans une liste blanche 
+de façon, par ex., à limiter les dégats collatéraux provoqués par une mauvaise utilisation faites par les designers.

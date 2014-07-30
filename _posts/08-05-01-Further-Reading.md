@@ -17,12 +17,12 @@ isChild: true
 ### Bibliothèques
 
 - [Aura.View](https://github.com/auraphp/Aura.View) *(native)*
-- [Blade](http://laravel.com/docs/templates) *(compiled, framework specific)*
-- [Dwoo](http://dwoo.org/) *(compiled)*
-- [Latte](https://github.com/nette/latte) *(compiled)*
-- [Mustache](https://github.com/bobthecow/mustache.php) *(compiled)*
-- [PHPTAL](http://phptal.org/) *(compiled)*
+- [Blade](http://laravel.com/docs/templates) *(compilée, spécifique au framework)*
+- [Dwoo](http://dwoo.org/) *(compilée)*
+- [Latte](https://github.com/nette/latte) *(compilée)*
+- [Mustache](https://github.com/bobthecow/mustache.php) *(compilée)*
+- [PHPTAL](http://phptal.org/) *(compilée)*
 - [Plates](http://platesphp.com/) *(native)*
-- [Smarty](http://www.smarty.net/) *(compiled)*
-- [Twig](http://twig.sensiolabs.org/) *(compiled)*
-- [Zend\View](http://framework.zend.com/manual/2.3/en/modules/zend.view.quick-start.html) *(native, framework specific)*
+- [Smarty](http://www.smarty.net/) *(compilée)*
+- [Twig](http://twig.sensiolabs.org/) *(compilée)*
+- [Zend\View](http://framework.zend.com/manual/2.3/en/modules/zend.view.quick-start.html) *(native, spécifique au framework)*
