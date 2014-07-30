@@ -4,8 +4,6 @@ title: Templating
 
 # Templating {#templating_title}
 
-Templates provide a convenient way of separating your controller and domain logic from your presentation logic.
-Templates typically contain the HTML of your application, but may also be used for other formats, such as XML.
-Templates are often referred to as "views", the second component of the
-[model–view–controller](http://www.phptherightway.com/pages/Design-Patterns.html#model-view-controller) (MVC)
-software architecture pattern.
+Les templates fournissent un moyen pratique de séparer les différentes préoccupations (contrôleur, logique, présentation). 
+Les templates contiennent typiquement l'HTML de votre application mais ils peuvent aussi être utilisés avec d'autres 
+formats comme l'XML. Les templates sont souvent classés dans la catégorie "vues", le second composant du pattern [MVC](/pages/Design-Patterns.html#modèlevuecontrôleur).
