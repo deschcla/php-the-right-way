@@ -253,7 +253,7 @@ $data = $client->loadOutput();
 Le motif "contrôleur frontal" est utilisé quand vous ne souhaitez qu'un seul point d'entrée pour votre application 
 (par ex. index.php) gérant l'ensemble des requêtes. Ce code est responsable du chargement de toutes les dépendances, 
 du traitement des requêtes et des réponses envoyées au navigateur. Le contrôleur frontal peut être bénéfique car il 
-encourage la modularisation de votre codde et vous donne un accès centralisé pour la gestion de chaque requête (comme 
+encourage la modularisation de votre code et vous donne un accès centralisé pour la gestion de chaque requête (comme 
 le nettoyage des données entrées).
 
 * [Le contrôleur frontal sur Wikipédia](https://en.wikipedia.org/wiki/Front_Controller_pattern) (en)
