@@ -15,7 +15,7 @@ qui peut devenir lourd.
 
 ## Extension MySQL
 
-L'extension [mysql] pour PHP est aujourd'hui au point mort et est [officiellement déprécié depuis PHP 5.5.0](http://php.net/manual/en/migration55.deprecated.php) ce qui
+L'extension [mysql] pour PHP est aujourd'hui au point mort et est [officiellement déprécié depuis PHP 5.5.0](http://php.net/manual/fr/migration55.deprecated.php) ce qui
 signifie qu'il sera retiré dans les prochaines versions. Si vous utilisez n'importe quelles fonctions commençant par 
 `mysql_*` (comme `mysql_connect()`) dans votre application alors cela donnera des erreurs dans votre code. Vous serez 
 donc obligé de faire la transition vers [mysqli] ou [PDO].
