@@ -11,7 +11,7 @@ récemment, vous pouviez utiliser un installateur '.msi'. Cependant il n'est plu
 Pour l'apprentissage et le développement en local, vous pouvez dorénavant utiliser le serveur intégré à PHP 5.4+, ainsi 
 vous n'aurez plus à vous soucier de la configuration du serveur web. Si vous souhaitez un système "tout-en-un" incluant 
 un serveur web et MySQL alors des outils tels que [WPI][wpi], [Zend Server CE][zsce], [XAMPP][xampp] ou encore 
- [WAMP][wamp] vous permettront d'avoir un environnement de développement complet rapidemenent. Ceci étant dit, ces 
+ [WAMP][wamp] vous permettront d'avoir un environnement de développement complet rapidement. Ceci étant dit, ces 
 outils sont différents de ce que l'on trouve en production donc faites attention sur les différences d'environnement si 
 vous travaillez sur Windows et déployez sur Linux.
 
