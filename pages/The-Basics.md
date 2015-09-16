@@ -349,4 +349,4 @@ vs.
 echo 'Une très longue chaîne';        // utilise 1Mio de mémoire
 {% endhighlight %}
 
-* [Astuce pour améliorer la performance](https://developers.google.com/speed/articles/optimizing-php) (en)
+* [Astuce pour améliorer la performance](http://web.archive.org/web/20140625191431/https://developers.google.com/speed/articles/optimizing-php) (en)
