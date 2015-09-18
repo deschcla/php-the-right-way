@@ -6,7 +6,7 @@ isChild: true
 ## Constuire et déployer votre application {#construire_et_déployer_votre_application_title}
 
 Si vous vous retrouvez à faire des changements sur le schéma de la base de données vous-même ou que vous exécutez vos 
-tests manuellement avant de mettre à jour vos fichiers (là aussi manuellment), vous devriez sans doute repenser votre 
+tests manuellement avant de mettre à jour vos fichiers (là aussi manuellement), vous devriez sans doute repenser votre 
 méthodologie de développement! Avec l'ensemble des étapes manuelles que vous devez réaliser pour déployer une 
 nouvelle version de votre application, il y a de fortes chances pour que des erreurs potentiellement fatales viennent 
 se glisser durant l'une des étapes. Que ce soit une simple mise à jour, un processus de construction et de déploiement 
