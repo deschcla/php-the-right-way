@@ -68,7 +68,7 @@ Vous devriez savoir que les connexions à la base de données utilisent pas mal 
 que les ressources finissaient par tarir si les connexions n'étaient pas implicitement fermées, cependant c'était plus 
 souvent le cas dans les autres langages. En utilisant PDO, vous pouvez  implicitement fermer la connexion en détruisant 
 l'objet et en s'assurant que toutes les références à cet objet ont été supprimés, c'est-à-dire, mise à NULL. Si vous 
-ne le faites pas explicitement, PHP va automatiquement fermé la connexion quand votre script s'arrêtera - à moins bien 
+ne le faites pas explicitement, PHP va automatiquement fermer la connexion quand votre script s'arrêtera - à moins bien 
 sûr que vous n'utilisiez une connexion persistante.
 
 * [En savoir plus sur les connexions avec PDO][5]
