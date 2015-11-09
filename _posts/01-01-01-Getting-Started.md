@@ -1,6 +1,6 @@
 ---
-title: Pour démarrer
+title:  Pour démarrer
+anchor: getting_started
 ---
 
-# Pour démarrer {#pour_démarrer_title}
-
+# Pour démarrer {#getting_started_title}

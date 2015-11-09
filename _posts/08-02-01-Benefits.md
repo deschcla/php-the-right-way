@@ -1,9 +1,10 @@
 ---
-title: Bénéfices
+title:   Bénéfices
 isChild: true
+anchor:  templating_benefits
 ---
 
-## Bénéfices {#bénéfices_title}
+## Bénéfices {#templating_benefits_title}
 
 L'intérêt principal d'utiliser les templates tient dans la séparation nette qui se créée entre la logique de présentation 
 et le reste de l'application. Les templates sont seuls responsables de l'affichage du contenu formatté. Ils ne sont pas 

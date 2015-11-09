@@ -1,9 +1,10 @@
 ---
-title: Les paradigmes de programmation
+title:   Les paradigmes de programmation
 isChild: true
+anchor:  programming_paradigms
 ---
 
-## Les paradigmes de programmation {#les_paradigmes_de_programmation_title}
+## Les paradigmes de programmation {#programming_paradigms_title}
 
 Le PHP est un langage flexible, dynamique supportant une variété de technique de programmation. Il a énormément évolué au 
 cours des années en ajoutant notamment un solide modèle orienté objet avec PHP 5.0 (2004), les fonctions anonymes et 
@@ -34,7 +35,7 @@ Le PHP 5.4 a rajouté la possibilité de lier ("bind") les fermetures à la port
 les "callables" de façon à ce qu'elles puissent être utilisés aussi bien avec les fonctions anonymes (dans la plupart des 
 cas).
 
-* Continuer la lecture sur la [programmation fonctionnelle en PHP](/php-the-right-way/pages/Functional-Programming.html)
+* Continuer la lecture sur la [programmation fonctionnelle en PHP]({{ site.baseurl }}/pages/Functional-Programming.html)
 * [En savoir plus sur les fonctions anonymes][anonymous-functions]
 * [En savoir plus sur la classe Closure][closure-class]
 * [Plus de détails sur Closures RFC][closures-rfc]

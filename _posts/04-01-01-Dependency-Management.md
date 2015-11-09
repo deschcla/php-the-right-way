@@ -1,8 +1,9 @@
 ---
-title: La gestion des dépendances
+title:  La gestion des dépendances
+anchor: dependency_management
 ---
 
-# La gestion des dépendances {#la_gestion_des_dépendances_title}
+# La gestion des dépendances {#dependency_management_title}
 
 Il existe une tonne de bibliothèques PHP, de frameworks et de composants pour gérer les dépendances. Votre projet va 
 surement utiliser plusieurs d'entre-eux — ce sont les dépendances d'un projet. Jusqu'à récemment, le PHP n'avait pas de 

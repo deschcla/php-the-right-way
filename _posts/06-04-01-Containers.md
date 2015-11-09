@@ -1,9 +1,10 @@
 ---
-title: Conteneurs
+title:   Conteneurs
 isChild: true
+anchor:  containers
 ---
 
-## Composants {#conteneurs_title}
+## Composants {#containers_title}
 
 La première chose que vous devriez comprendre sur les composants d'injection de dépendances est qu'il ne s'agit pas de 
 la même chose que l'injection de dépendances. Un composant est un moyen pratique d'implémenter l'injection de dépendances, 

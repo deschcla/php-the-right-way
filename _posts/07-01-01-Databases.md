@@ -1,8 +1,9 @@
 ---
-title: Bases de données
+title:  Bases de données
+anchor: databases
 ---
 
-# Bases de données {#base_de_données_title}
+# Bases de données {#databases_title}
 
 Votre code PHP va souvent faire appel aux base de données pour préserver l'information. Vous avez un certain nombre 
 d'options pour vous connecter et interagir avec votre base de données. L'option recommandée _avant PHP 5.1.0_ était 

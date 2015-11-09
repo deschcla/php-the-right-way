@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Programmation fonctionnelle en PHP
+sitemap: true
 ---
 
 # La programmation fonctionnelle en PHP

@@ -1,9 +1,10 @@
 ---
-title: Fichiers de configuration
+title:   Fichiers de configuration
 isChild: true
+anchor:  configuration_files
 ---
 
-## Fichiers de configuration {#fichiers_de_configuration_title}
+## Fichiers de configuration {#configuration_files_title}
 
 Lorsque vous créez des fichiers de configuration pour vos applications, les meilleurs pratiques recommandent que 
 les méthodes ci-dessous soient suivies :

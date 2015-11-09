@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Motif de conception
+sitemap: true
 ---
 
 # Les motifs de conception

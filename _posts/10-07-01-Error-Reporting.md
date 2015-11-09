@@ -1,9 +1,10 @@
 ---
-title: Rapport des erreurs
+title:   Rapport des erreurs
 isChild: true
+anchor:  error_reporting
 ---
 
-## Rapport d'erreurs {#rapport_des_erreurs_title}
+## Rapport d'erreurs {#error_reporting_title}
 
 La journalisation des erreurs peut être utile pour repérer les points qui posent problème dans votre application mais 
 cela permet aussi d'afficher des informations sur la structure de votre application au monde extérieur. Pour vous 

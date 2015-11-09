@@ -1,9 +1,10 @@
 ---
-title: Développement dirigé par les tests
+title:   Développement dirigé par les tests
 isChild: true
+anchor:  test_driven_development
 ---
 
-## Développement dirigé par les tests (TDD) {#développement_dirigé_par_les_tests_title}
+## Développement dirigé par les tests (TDD) {#test_driven_development_title}
 
 Citation tirée de [Wikipedia](http://fr.wikipedia.org/wiki/Test_Driven_Development):
 

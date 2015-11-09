@@ -1,9 +1,10 @@
 ---
+title:   Interagir avec les bases de données
 isChild: true
-title: Interagir avec les bases de données
+anchor:  interacting_via_code
 ---
 
-## Interagir avec les bases de données
+## Interagir avec les bases de données {#interacting_via_code_title}
 
 Quand les développeurs commencent à utiliser PHP, ils finissent souvent par mélanger le code métier avec celui gérant 
 la base de données et l'affichage ce qui donne quelque chose de ce genre là :

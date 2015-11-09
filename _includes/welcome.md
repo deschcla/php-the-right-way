@@ -15,7 +15,7 @@ les cas d'utilisations.
 Ce document n'est pas figé et sera amené à être mis à jour avec des informations utiles et des exemples au fur et à
 mesure qu'ils seront disponibles.
 
-## Traductions
+## Traductions {#translations}
 
 _PHP: La bonne manière_ est (déjà) traduit en plusieurs langues :
 
@@ -34,12 +34,12 @@ _PHP: La bonne manière_ est (déjà) traduit en plusieurs langues :
 * [Turque](http://hkulekci.github.io/php-the-right-way/)
 * [Français](http://eilgin.github.io/php-the-right-way/)
 
-## Comment contribuer
+## Comment contribuer {#how-to-contribute}
 
 Aidez-nous à faire de ce site la meilleure ressource disponible
 pour les nouveaux programmeurs PHP. [Contribuer sur GitHub][1]
 
-## Faites passer le mot!
+## Faites passer le mot! {#spread-the-word}
 
 _PHP: La bonne manière_ a des bannières que vous pouvez utiliser sur votre site. Montrez votre soutien au projet et
 faites connaître aux nouveaux développeurs PHP où trouver la bonne information !

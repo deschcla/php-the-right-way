@@ -1,9 +1,10 @@
 ---
-title: Installation sous Mac
+title:   Installation sous Mac
 isChild: true
+anchor:  mac_setup
 ---
 
-## Installation sous Mac  {#installation_sous_mac_title}
+## Installation sous Mac  {#mac_setup_title}
 
 Le système d'exploitation OSX contient une version précompilée de PHP mais est généralement en retard sur la dernière 
 version stable. Lion contient la version 5.3.6, Moutain la 5.3.10 et Mavericks la 5.4.17.

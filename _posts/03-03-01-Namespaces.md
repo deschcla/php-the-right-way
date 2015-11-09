@@ -1,9 +1,10 @@
 ---
-title: Les espaces de noms
+title:   Les espaces de noms
 isChild: true
+anchor:  namespaces
 ---
 
-## Les espaces de noms {#les_espaces_de_noms_title}
+## Les espaces de noms {#namespaces_title}
 
 Comme mentionné plus haut, la communauté PHP a beaucoup de développeurs créant beaucoup de code. Cela signifie que le 
 code d'une bibliothèque PHP peut utiliser le même nom de classe qu'une autre bibliothèque. Quand plusieurs bibliothèques 

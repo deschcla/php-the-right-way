@@ -1,9 +1,10 @@
 ---
-title: Problèmes complexe
+title:   Problèmes complexe
 isChild: true
+anchor:  complex_problem
 ---
 
-## Problèmes complexe {#problèmes_complexe_title}
+## Problèmes complexe {#complex_problem_title}
 
 Si vous avez déjà lu des articles sur l'injection de dépendances alors vous avez probablement vu des termes comme 
 *"Inversion de contrôle"* ou *"Principe d'inversion de dépendances"*. Ces termes sont les problèmes complexes que 

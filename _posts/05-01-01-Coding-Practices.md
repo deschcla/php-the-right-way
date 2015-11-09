@@ -1,5 +1,6 @@
 ---
-title: Pratiques de programmation
+title:  Pratiques de programmation
+anchor: coding_practices
 ---
 
-# Pratiques de programmation {#pratiques_de_programmation_title}
+# Pratiques de programmation {#coding_practices_title}

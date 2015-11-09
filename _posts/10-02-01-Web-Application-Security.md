@@ -1,9 +1,10 @@
 ---
-title: La sécurité dans une application web
+title:   La sécurité dans une application web
 isChild: true
+anchor:  web_application_security
 ---
 
-## La sécurité dans une application web {#la_sécurité_dans_une_application_web_title}
+## La sécurité dans une application web {#web_application_security_title}
 
 De nombreuses personnes mal intentionnées tenteront d'exploiter les possibles failles dans votre application web. 
 Il est important que vous ayez conscience de cela et que vous preniez les précautions nécessaires afin de renforcer 

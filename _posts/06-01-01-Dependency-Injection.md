@@ -1,8 +1,9 @@
 ---
-title: Injection de dépendance
+title:  Injection de dépendance
+anchor: dependency_injection
 ---
 
-# Injection de dépendance {#injection_de_dépendance_title}
+# Injection de dépendance {#dependency_injection_title}
 
 De [Wikipedia](http://fr.wikipedia.org/wiki/Injection_de_d%C3%A9pendances):
 

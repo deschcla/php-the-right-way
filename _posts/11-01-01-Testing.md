@@ -1,8 +1,9 @@
 ---
-title: Tests
+title:  Tests
+anchor: testing
 ---
 
-# Tests {#tests_title}
+# Tests {#testing_title}
 
 Écrire des tests automatisés pour votre code PHP est considéré comme une très bonne pratique et permet de construire 
 des applications plus robustes. Les tests automatisés sont un excellent outil pour s'assurer que votre application 

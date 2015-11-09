@@ -1,5 +1,6 @@
 ---
-title: Les points importants du language
+title:  Les points importants du language
+anchor: language_highlights
 ---
 
-# Les points importants du language {#les_points_importants_du_language_title}
+# Les points importants du language {#language_highlights_title}

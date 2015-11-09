@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Les bases
+sitemap: true
 ---
 
 # Les bases

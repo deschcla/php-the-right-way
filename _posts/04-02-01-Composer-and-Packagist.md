@@ -1,9 +1,10 @@
 ---
-title: Composer et Packagist 
+title:   Composer et Packagist 
 isChild: true
+anchor:  composer_and_packagist
 ---
 
-## Composer et Packagist {#composer_et_packagist_title}
+## Composer et Packagist {#composer_and_packagist_title}
 
 Composer un **excellent** gestionnaire de dépendances pour PHP. Listez les dépendances de votre projet dans un fichier 
 `composer.json` et en quelques commandes, Composer va automatiquement télécharger ces dépendances et les installer pour 

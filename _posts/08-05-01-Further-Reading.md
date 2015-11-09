@@ -1,9 +1,10 @@
 ---
-title: Aller plus loin
+title:   Aller plus loin
 isChild: true
+anchor:  templating_further_reading
 ---
 
-## Aller plus loin {#aller_plus_loin_title}
+## Aller plus loin {#templating_further_reading_title}
 
 ### Articles & Tutoriels
 

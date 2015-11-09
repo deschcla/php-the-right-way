@@ -1,6 +1,7 @@
 ---
-title: Behavior Driven Development
+title:   Behavior Driven Development
 isChild: true
+anchor:  behavior_driven_development
 ---
 
 ## Behavior Driven Development {#behavior_driven_development_title}

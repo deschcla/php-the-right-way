@@ -1,9 +1,10 @@
 ---
-title: Constuire et déployer votre application
+title:   Constuire et déployer votre application
 isChild: true
+anchor:  building_your_application
 ---
 
-## Constuire et déployer votre application {#construire_et_déployer_votre_application_title}
+## Constuire et déployer votre application {#building_your_application_title}
 
 Si vous vous retrouvez à faire des changements sur le schéma de la base de données vous-même ou que vous exécutez vos 
 tests manuellement avant de mettre à jour vos fichiers (là aussi manuellement), vous devriez sans doute repenser votre 

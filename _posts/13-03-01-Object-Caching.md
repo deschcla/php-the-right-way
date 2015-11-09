@@ -1,9 +1,10 @@
 ---
-title: Cache des objets
+title:   Cache des objets
 isChild: true
+anchor:  object_caching
 ---
 
-## Cache des objets {#cache_des_objets_title}
+## Cache des objets {#object_caching_title}
 
 Il arrive parfois qu'il soit plus avantageux de mettre en cache des objets individuels dans votre code comme par 
 exemple dans les cas où l'on souhaite récupérer le même résultat provenant d'une base de données. Vous pouvez utiliser 

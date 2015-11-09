@@ -1,8 +1,9 @@
 ---
-title: Ressources
+title:  Ressources
+anchor: resources
 ---
 
-# Ressources {#ressources_title}
+# Ressources {#resources_title}
 
 ## Officielles
 

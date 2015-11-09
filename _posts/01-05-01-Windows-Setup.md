@@ -1,9 +1,10 @@
 ---
-title: Installation sous Windows
+title:   Installation sous Windows
 isChild: true
+anchor:  windows_setup
 ---
 
-## Installation sous Windows {#installation_sous_windows_title}
+## Installation sous Windows {#windows_setup_title}
 
 PHP est disponible sous Windows de plusieurs façons. Vous pouvez [téléchargez les binaires][php-downloads] et jusqu'à 
 récemment, vous pouviez utiliser un installateur '.msi'. Cependant il n'est plus maintenu depuis la version 5.3.0.

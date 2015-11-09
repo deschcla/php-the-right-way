@@ -1,9 +1,10 @@
 ---
-title: Templates compilés
+title:   Templates compilés
 isChild: true
+anchor:  compiled_templates
 ---
 
-## Templates compilés {#templates compilés}
+## Templates compilés {#compiled_templates_title}
 
 Bien que le PHP ait évolué en un langage orienté objet mature, il ne s'est 
 [pas énormément amélioré](http://fabien.potencier.org/article/34/templating-engines-in-php) en tant que langage de 

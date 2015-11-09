@@ -1,9 +1,10 @@
 ---
-title: Lecture approfondie
+title:   Lecture approfondie
 isChild: true
+anchor:  dependency_injection_further_reading
 ---
 
-## Lecture approfondie {#lecture_approfondie_title}
+## Lecture approfondie {#dependency_injection_further_reading_title}
 
 Attention les liens qui suivent sont tous en anglais :
 

@@ -1,9 +1,10 @@
 ---
-title: Serveurs virtuels et dédiés
+title:   Serveurs virtuels et dédiés
 isChild: true
+anchor:  virtual_or_dedicated_servers
 ---
 
-## Serveurs virtuels et dédiés {#serveurs_virtuels_et_dédiés_title}
+## Serveurs virtuels et dédiés {#virtual_or_dedicated_servers_title}
 
 Si vous vous sentez à l'aise avec l'administration des systèmes ou êtes intéressé pour en connaître plus sur ce domaine, 
 les serveurs virtuels et dédiés vous donne un contrôle absolu sur l'environement de production de votre application.

@@ -1,8 +1,9 @@
 ---
-title: Cache
+title:  Cache
+anchor: caching
 ---
 
-# Cache {#cache_title}
+# Cache {#caching_title}
 
 Le PHP est plutôt rapide en lui-même mais certains points de congestion peuvent apparaître quand vous établissez des 
 connexions distantes, des chargements de fichiers, etc. Heureusement, ils y a de nombreux outils disponibles pour 

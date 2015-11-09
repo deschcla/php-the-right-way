@@ -1,9 +1,10 @@
 ---
-title: Filtrage des données
+title:   Filtrage des données
 isChild: true
+anchor:  data_filtering
 ---
 
-## Filtrage des données {#filtrage_des_données_title}
+## Filtrage des données {#data_filtering_title}
 
 Une règle d'or: ne jamais faire confiance aux entrées extérieures dans votre code PHP. Prenez toujours soin à 
 "nettoyer" et valider ces entrées avant de les utiliser dans le code. Les fonctions `filter_var` et `filter_input` 

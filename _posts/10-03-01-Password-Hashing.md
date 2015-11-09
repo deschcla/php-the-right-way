@@ -1,9 +1,10 @@
 ---
-title: Hachage de mots de passe
+title:   Hachage de mots de passe
 isChild: true
+anchor:  password_hashing
 ---
 
-## Hachage de mots de passe {#hachage_de_mots_de_passe_title}
+## Hachage de mots de passe {#password_hashing_title}
 
 Pratiquement tout le monde construit une application PHP qui se base sur une authentification de l'utilisateur. Les 
 identifiants et les mots de passe sont stockés dans une base de données et utiliser plus tard pour authentifier les 

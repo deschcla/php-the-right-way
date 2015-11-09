@@ -1,9 +1,10 @@
 ---
-title: Interface en ligne de commande
+title:   Interface en ligne de commande
 isChild: true
+anchor:  command_line_interface
 ---
 
-## L'interface en ligne de commande {#Interface_en_ligne_de_commande_title}
+## L'interface en ligne de commande {#command_line_interface_title}
 
 Le PHP a été créé principalement pour écrire des applications web mais il peut être tout aussi utile pour écrire des 
 programmes en ligne de commande (command line interface ou CLI en anglais). Ces programmes peuvent vous aider à 

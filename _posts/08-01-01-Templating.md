@@ -1,5 +1,6 @@
 ---
-title: Templating
+title:  Templating
+anchor: templating
 ---
 
 # Templating {#templating_title}

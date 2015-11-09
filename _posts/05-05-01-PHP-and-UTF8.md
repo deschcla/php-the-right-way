@@ -1,6 +1,7 @@
 ---
-title: Travailler avec de l'UTF-8
+title:   Travailler avec de l'UTF-8
 isChild: true
+anchor:  php_and_utf8
 ---
 
 ## Travailler avec de l'UTF-8 {#php_and_utf8_title}

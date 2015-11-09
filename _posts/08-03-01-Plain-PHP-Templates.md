@@ -1,9 +1,10 @@
 ---
-title: Templates en PHP pur
+title:   Templates en PHP pur
 isChild: true
+anchor:  plain_php_templates
 ---
 
-## Templates en PHP "pur" {#templates_en_php_pur_title}
+## Templates en PHP "pur" {#plain_php_templates_title}
 
 Les templates "pur" PHP sont ceux qui n'utilisent que du code PHP natif. C'est un choix naturel étant donné que PHP est 
 lui-même un language de templating. Ce terme signifie tout simplement que vous pouvez combiner du code PHP avec un autre 

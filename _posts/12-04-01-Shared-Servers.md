@@ -1,9 +1,10 @@
 ---
-title: Hébergement mutualisé
+title:   Hébergement mutualisé
 isChild: true
+anchor:  shared_servers
 ---
 
-## Hébergement mutualisé {#hébergement_mutualisé_title}
+## Hébergement mutualisé {#shared_servers_title}
 
 Grâce à la popularité de PHP il existe de nombreuses solutions d'hébergements mutualisés. Il est difficile d'ailleurs 
 de trouver un hébergeur qui ne propose pas l'installation de PHP mais vérifier tout de même que ce soit la 

@@ -1,8 +1,9 @@
 ---
-title: Communauté
+title:  Communauté
+anchor: community
 ---
 
-# Communauté {#communauté_title}
+# Communauté {#ccommunity_title}
 
 La communauté PHP est aussi diverse que large et de nombreux membres sont prêts à porter secours aux nouveaux. 
 N'hésitez pas à rejoindre un PHP User Group (PUG) ou à assister à des conférences sur PHP afin d'en apprendre plus sur 

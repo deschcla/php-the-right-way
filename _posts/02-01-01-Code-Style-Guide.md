@@ -1,8 +1,9 @@
 ---
-title: Normes
+title:  Normes
+anchor: code_style_guide
 ---
 
-# Normes  {#normes_title}
+# Normes  {#code_style_guide_title}
 
 La communauté PHP est large et diverse, composé d'innombrables bibliothèques, de frameworks et de composants. Il est 
 courant pour les développeurs PHP de choisir plusieurs d'entre-eux et de les combiner en un seul projet. Il est important 

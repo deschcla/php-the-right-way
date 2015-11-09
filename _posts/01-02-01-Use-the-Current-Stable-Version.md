@@ -1,9 +1,10 @@
 ---
-title: Utiliser la dernière version stable (5.6)
+title:   Utiliser la dernière version stable (5.6)
 isChild: true
+anchor:  use_the_current_stable_version
 ---
 
-## Utiliser la dernière version stable (5.6) {#utiliser_la_dernière_version_stable_56_title}
+## Utiliser la dernière version stable (5.6) {#use_the_current_stable_version_title}
 
 Si vous venez juste de commencer à utiliser PHP, prenez soin de débuter avec la dernière version stable 
 de [PHP][php-release]. Le PHP a fait de grands progrès en ajout de [puissantes fonctionnalités](#les_points_importants_du_language) 

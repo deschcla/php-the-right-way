@@ -1,9 +1,10 @@
 ---
-title: Outils de test complémentaire
+title:   Outils de test complémentaire
 isChild: true
+anchor:  complementary_testing_tools
 ---
 
-## Outils de test complémentaire {#outils_de_test_complémentaire_title}
+## Outils de test complémentaire {#complementary_testing_tools_title}
 
 Hormis les tests unitaires et les frameworks orientés comportement, il y a aussi un certain nombre de frameworks 
 génériques et de bibliothèque utilitaires selon l'approche désirée.

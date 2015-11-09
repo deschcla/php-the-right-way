@@ -1,9 +1,10 @@
 ---
-title: Cache du bytecode
+title:   Cache du bytecode
 isChild: true
+anchor:  bytecode_caching
 ---
 
-## Cache du bytecode {#cache_du_bytecode_title}
+## Cache du bytecode {#bytecode_caching_title}
 
 Quand un fichier PHP est exécuté, il est d'abord compilé sous forme de bytecode (aussi connu sous le nom d'opcode) 
 puis ce bytecode est ensuite exécuté.

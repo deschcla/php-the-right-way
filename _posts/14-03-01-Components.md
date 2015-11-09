@@ -1,9 +1,10 @@
 ---
-title: Composants
+title:   Composants
 isChild: true
+anchor:  components
 ---
 
-## Composants {#composants_title}
+## Composants {#components_title}
 
 Comme mentionné au dessus, les "composants" sont une autre approche pour atteindre l'objectif de créer, distribuer et 
 implémenter du code partagé. Différents dépôts de composants existent, les 2 plus connus sont :

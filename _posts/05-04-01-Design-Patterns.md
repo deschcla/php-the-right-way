@@ -1,10 +1,11 @@
 ---
-title: Les motifs de conception
+title:   Les motifs de conception
 isChild: true
+anchor:  design_patterns
 ---
 
 
-## Les motifs de conception {#les_motifs_de_conception_title}
+## Les motifs de conception {#design_patterns_title}
 
 Lorsque vous construisez votre application, il est souvent utile d'utiliser des motifs courants dans votre code et dans 
 la structure générale de votre projet. Utiliser ces motifs est utile car il devient alors plus facile de gérer le code 
@@ -16,4 +17,4 @@ motifs les plus utiles à utiliser au sein de votre code. Si, d'un autre côté,
 de framework pour construire votre application, cela ne vous empêchera pas de choisir un certain nombre de motifs que 
 vous jugerez nécessaire.
 
-* Continuer la lecture sur les [motifs de conceptions](/php-the-right-way/pages/Design-Patterns.html).
+* Continuer la lecture sur les [motifs de conceptions]({{ site.baseurl }}/pages/Design-Patterns.html).

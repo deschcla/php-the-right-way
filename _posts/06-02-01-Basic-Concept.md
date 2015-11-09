@@ -1,9 +1,10 @@
 ---
-title: Concepts de base
+title:   Concepts de base
 isChild: true
+anchor:  basic_concept
 ---
 
-## Concepts de base {#concepts_de_base_title}
+## Concepts de base {#basic_concept_title}
 
 Nous pouvons démontrer le concept avec un exemple tout bête.
 
