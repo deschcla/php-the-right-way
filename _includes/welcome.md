@@ -27,7 +27,7 @@ _PHP: La bonne manière_ est (déjà) traduit en plusieurs langues :
 * [Polonais](http://pl.phptherightway.com/)
 * [Portugais](http://br.phptherightway.com/)
 * [Russe](http://getjump.github.io/ru-php-the-right-way)
-* [Espagnol](http://lamaneracorrecta.php.org.ve)
+* [Espagnol](http://phpdevenezuela.github.io/php-the-right-way/)
 * [Ukrainien](http://iflista.github.com/php-the-right-way/)
 * [Bulgare](http://bg.phptherightway.com/)
 * [Allemand](http://rwetzlmayr.github.io/php-the-right-way/)
