@@ -7,7 +7,7 @@ Vous êtes sur la page github du projet _PHP: La bonne manière (en: The right w
 * Ce site web est un projet Jekyll.
 * Chaque section et sous-section correspondent à un fichier Markdown se trouvant dans `_posts/`.
 * Les sous-sections possèdent `isChild: true` en début de fichier.
-* La navigation et la structure de la page sont automatiquement générés.
+* La navigation et la structure de la page sont automatiquement générées.
 
 ## Faites passer le mot !
 
