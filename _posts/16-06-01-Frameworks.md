@@ -7,7 +7,7 @@ anchor:  frameworks
 ## Frameworks {#frameworks_title}
 
 Plutôt que de ré-inventer la roue, beaucoup de développeurs PHP utilisent des frameworks pour construire leur application 
-web. Les frameworks permettent de s'abstraire des préoccupations de bas niveau et fournit de précieuses interfaces 
+web. Les frameworks permettent de s'abstraire des préoccupations de bas niveau et fournissent de précieuses interfaces 
 pour remplir les tâches les plus communes.
 
 Vous n'avez pas besoin d'utiliser un framework pour chacun de vos projets. Parfois, du PHP brut est le meilleur choix 

@@ -1,12 +1,10 @@
 # Bienvenue
 
-Il existe énormément d'information obsolète sur la toile à propos de PHP ce qui conduit les nouveaux utilisateurs de PHP à prendre de mauvaises habitudes, propageant de mauvaises pratiques et du code peu sûr.
+Il existe énormément d'informations obsolètes sur la toile à propos de PHP, ce qui conduit les nouveaux utilisateurs de PHP à prendre de mauvaises habitudes, propageant de mauvaises pratiques et du code peu sûr.
 _PHP: La bonne manière_ est une référence concise et facile à lire à propos des conventions d'écriture
-les plus connues sur le PHP, des liens sur les tutoriaux faisant autorité sur le web et des pratiques que les contributeurs
-de ce document considèrent comme meilleures à l'heure actuelle.
+les plus connues sur le PHP, des liens sur les tutoriaux faisant autorité sur le web et des pratiques que les contributeurs de ce document considèrent comme meilleures à l'heure actuelle.
 
-_Il n'existe pas une seule et unique façon d'utiliser PHP_. Ce site web a pour but d'amener 
-les nouveaux développeurs PHP sur des sujets qu'ils n'auraient pas pu découvrir avant qu'il ne soit trop tard, et vise
+_Il n'existe pas une seule et unique façon d'utiliser PHP_. Ce site web a pour but d'amener les nouveaux développeurs PHP sur des sujets qu'ils n'auraient pas pu découvrir avant qu'il ne soit trop tard, et vise
 à donner aux professionnels chevronnés des idées neuves sur ces sujets qu'ils ont pu traiter pendant des années sans
 s'être penchés dessus. Ce site web ne vous dira pas quels outils utiliser, mais au lieu de cela vous offre
 des suggestions sur plusieurs options, et quand c'est possible en vous expliquant les différences dans l'approche et

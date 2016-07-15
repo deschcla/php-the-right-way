@@ -6,12 +6,12 @@ anchor:  date_and_time
 
 ## La date et le temps {#date_and_time_title}
 
-Le PHP a une classe nommé DateTime afin d'aider à lire, écrire, comparer et calculer avec les dates et le temps. Il existe 
-beaucoup de fonctions liées aux dates en PHP en plus de DateTime mais ce dernier fournit une interface orienté objet à 
+Le PHP a une classe nommée DateTime afin d'aider à lire, écrire, comparer et calculer avec les dates et le temps. Il existe 
+beaucoup de fonctions liées aux dates en PHP, en plus de DateTime, mais cette dernière fournit une interface orientée objet à 
 la plupart des usages courants. Il peut gérer les fuseaux horaires mais cela dépasse le cadre de notre introduction.
 
 Pour commencer à travailler avec DateTime, convertissez les chaînes de caractères représentant des dates ou du temps avec 
-la fabrique `createFromFormat()` ou faites `new \DateTime`. Utilisez la méthode `format()` pour convertir la date 
+la méthode `createFromFormat()` ou faites `new \DateTime`. Utilisez la méthode `format()` pour convertir la date 
 vers une représentation sous forme de chaîne de caractères.
 
 {% highlight php %}
@@ -48,7 +48,7 @@ if ($start < $end) {
 {% endhighlight %}
 
 Un dernier exemple pour faire la démonstration de la classe DatePeriod. Il est utilisé pour itérer sur des évènements 
-récurrents. Il peut prendre 2 objets DateTime, start et end, et l'intervalle pour laquelle tous les évènements seront 
+récurrents. Il peut prendre 2 objets DateTime, start et end, et l'intervalle pour lequel tous les évènements seront 
 retournés.
 
 {% highlight php %}
@@ -63,7 +63,7 @@ foreach ($periodIterator as $date) {
 {% endhighlight %}
 
 * [En savoir plus sur DateTime][datetime]
-* [En savoir plus sur le formattage des dates][dateformat] (les formats et options acceptées)
+* [En savoir plus sur le formatage des dates][dateformat] (les formats et options acceptées)
 
 [datetime]: http://www.php.net/manual/book.datetime.php
 [dateformat]: http://www.php.net/manual/function.date.php

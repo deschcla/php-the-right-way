@@ -27,7 +27,7 @@ l'[extension pour les chaînes de caractères multi-octets] et ont été conçus
 
 Vous devez utiliser les fonctions `mb_*` à chaque fois que vous manipulez une chaîne de caractère Unicode. Par exemple, 
 si vous utilisez `substr()` sur une chaîne UTF-8, il y a de forte chance pour que le résultat contienne des caractères 
-à moitié tronqué. La fonction correcte dans ce genre de cas serait d'utiliser `mb_substr()`.
+à moitié tronqués. La fonction correcte dans ce genre de cas serait d'utiliser `mb_substr()`.
 
 La difficulté réside dans le fait de se souvenir à chaque fois d'utiliser les fonctions `mb_*` quand c'est nécessaire. 
 Si jamais vous l'oubliez ne serait-ce qu'une seule fois alors votre chaîne Unicode aura de grande chance d'être incompréhensible 
@@ -57,9 +57,9 @@ si jamais il le trouve sinon il utilisera les fonctions non-UTF8.
 Si votre script PHP a accès à MySQL, il y a une forte chance que vos chaînes de caractères soient stockées en tant que chaînes 
 non-UTF8 même si vous suivez les précautions vues plus haut.
 
-Pour vous assurer que vos chaînes aillent de PHP vers MySQL en UTF-8, vérifiez que votre base de donnée et les tables 
+Pour vous assurer que vos chaînes aillent de PHP vers MySQL en UTF-8, vérifiez que votre base de données et les tables 
 qu'elle contient sont toutes enregistrées avec l'encodage de caractères et la collation `utf8mb4` et que votre connexion 
-PDO soit aussi mis sur cet encodage. Voir l'exemple plus bas. Ceci est _extrêmement important_.
+PDO soit aussi mise sur cet encodage. Voir l'exemple plus bas. Ceci est _extrêmement important_.
 
 Notez que pour utiliser le support complet pour UTF-8, vous devez utiliser l'encodage de caractères `utf8mb4` et non 
 `utf8` ! Voir les détails plus loin pour comprendre pourquoi.
@@ -109,7 +109,7 @@ $handle->bindValue(1, 1, PDO::PARAM_INT);
 $handle->bindValue(2, $string);
 $handle->execute();
 
-// Récupère la chaîne que l'on vient juste de stocker pour prouver qu'elle a été correctement stocké
+// Récupère la chaîne que l'on vient juste de stocker pour prouver qu'elle a été correctement stockée
 $handle = $link->prepare('select * from ElvishSentences where Id = ?');
 $handle->bindValue(1, 1, PDO::PARAM_INT);
 $handle->execute();

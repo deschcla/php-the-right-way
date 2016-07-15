@@ -11,13 +11,13 @@ d'utiliser les pilotes natifs tels que [mysql][mysql], [mysqli][mysqli], [pgsql]
 
 Les pilotes natifs sont géniaux si vous n'utilisez qu'un seul type de base de données dans votre application mais si, 
 par exemple, vous utilisez MySQL et un peu de MSSQL ou vous avez besoin de vous connecter à une base Oracle alors vous 
-ne pourrez utiliser les mêmes pilotes. Vous aurez besoin d'apprendre une nouvelle API pour chaque type de BDD &mdash; ce 
+ne pourrez pas utiliser les mêmes pilotes. Vous aurez besoin d'apprendre une nouvelle API pour chaque type de BDD &mdash; ce 
 qui peut devenir lourd.
 
 ## Extension MySQL
 
-L'extension [mysql] pour PHP est aujourd'hui au point mort et est [officiellement déprécié depuis PHP 5.5.0](http://php.net/manual/fr/migration55.deprecated.php) ce qui
-signifie qu'il sera retiré dans les prochaines versions. Si vous utilisez n'importe quelles fonctions commençant par 
+L'extension [mysql] pour PHP est aujourd'hui au point mort et est [officiellement dépréciée depuis PHP 5.5.0](http://php.net/manual/fr/migration55.deprecated.php) ce qui
+signifie qu'elle sera retirée dans les prochaines versions. Si vous utilisez n'importe quelles fonctions commençant par 
 `mysql_*` (comme `mysql_connect()`) dans votre application alors cela donnera des erreurs dans votre code. Vous serez 
 donc obligé de faire la transition vers [mysqli] ou [PDO].
 
@@ -37,7 +37,7 @@ Plus important encore, le `PDO` vous permet d'injecter en toute sécurité des e
 dans vos requêtes SQL sans que vous ayez à vous soucier des attaques par injection SQL. Cela est rendu possible grâce à 
 l'utilisation des fonctions de PDO et des paramètres liés.
 
-Supposons qu'un script PHP reçoit un identifiant numérique en tant que paramètre d'entrée. Cet ID devrait être utiliser 
+Supposons qu'un script PHP reçoit un identifiant numérique en tant que paramètre d'entrée. Cet ID devrait être utilisé 
 pour récupérer les enregistrements d'un utilisateur dans la base de données. Voici la mauvaise façon de s'y prendre:
 
 {% highlight php %}
@@ -61,14 +61,14 @@ $stmt->execute();
 {% endhighlight %}
 
 Voici le code correct. Il utilise un paramètre lié à une expression PDO. Cela "échappe" les entrées étrangères avant 
-qu'elles ne soient introduites à la base de données ce qui empêche les attaques potentielles d'injection SQL.
+qu'elles ne soient introduites à la base de données, ce qui empêche les attaques potentielles d'injection SQL.
 
 * [En savoir plus sur PDO][1]
 
 Vous devriez savoir que les connexions à la base de données utilisent pas mal de ressources et il arrivait souvent 
-que les ressources finissaient par tarir si les connexions n'étaient pas implicitement fermées, cependant c'était plus 
-souvent le cas dans les autres langages. En utilisant PDO, vous pouvez  implicitement fermer la connexion en détruisant 
-l'objet et en s'assurant que toutes les références à cet objet ont été supprimés, c'est-à-dire, mise à NULL. Si vous 
+que les ressources finissaient par tarir si les connexions n'étaient pas implicitement fermées. Cependant c'était plus 
+souvent le cas dans les autres langages. En utilisant PDO, vous pouvez implicitement fermer la connexion en détruisant 
+l'objet et en s'assurant que toutes les références à cet objet ont été supprimées, c'est-à-dire, mises à NULL. Si vous 
 ne le faites pas explicitement, PHP va automatiquement fermer la connexion quand votre script s'arrêtera - à moins bien 
 sûr que vous n'utilisiez une connexion persistante.
 
@@ -76,7 +76,7 @@ sûr que vous n'utilisiez une connexion persistante.
 
 ## Couches d'abstractions
 
-Beaucoup de frameworks fournissent leur propre couche d'abstraction qui peut être ou non basé sur PDO. Cette couche va 
+Beaucoup de frameworks fournissent leur propre couche d'abstraction qui peut être ou non basée sur PDO. Cette couche va 
 souvent émuler les fonctionnalités d'une base de données qui seraient manquantes dans une autre base en enveloppant 
 vos requêtes dans des méthodes PHP vous donnant ainsi une réelle abstraction avec la base de données.
 Cela engendre évidemment un légèr surplus mais si vous voulez développez une application portable ayant besoin de 
@@ -84,7 +84,7 @@ communiquer avec MySQL, PostgreSQL et SQLite alors ce petit surplus en vaudra la
 maintenance du code.
 
 Plusieurs couches d'abstractions ont été construites en utilisant les standards d'espace de noms [PSR-0][psr0] ou 
-[PSR-4][psr4]; ils peuvent donc être installé dans n'importe quelle application qui vous plaira:
+[PSR-4][psr4]; elles peuvent donc être installées dans n'importe quelle application qui vous plaira:
 
 * [Aura SQL][6]
 * [Doctrine2 DBAL][2]

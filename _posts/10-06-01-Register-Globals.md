@@ -8,7 +8,7 @@ anchor:  register_globals
 ** NOTE: ** Depuis la version 5.4.0 de PHP, le paramètre `register_globals` a été retiré et ne peut plus être utilisé. 
 Les applications plus anciennes n'afficheront plus qu'un avertissement si ce paramètre est utilisé.
 
-Quand il est activé, le paramètre de configuration `register_globals` permet à plusieurs types de variables (cela inclue 
+Quand il est activé, le paramètre de configuration `register_globals` permet à plusieurs types de variables (cela inclus 
 notamment les paramètres `$_POST`, `$_GET` and `$_REQUEST`) d'être accessibles partout dans votre application. Cela 
 peut facilement conduire à des problèmes de sécurité étant donné que votre application ne peut de façon claire dire 
 d'où proviennent les données.

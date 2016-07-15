@@ -13,7 +13,7 @@ chaque appel sera une perte de ressources CPU.
 
 C'est là que le cache du bytecode intervient. Il empêche la compilation récurrente en stockant le bytecode en mémoire 
 et en le ré-utilisant à chaque appel successif. Mettre en place le cache ne prend que quelques minutes mais cela  
-augmentera de façon significatif la réactivité de votre applicaiton. Il n'y a donc aucune raison de ne pas l'utiliser.
+augmentera de façon significative la réactivité de votre application. Il n'y a donc aucune raison de ne pas l'utiliser.
 
 Avec PHP 5.5, il existe un cache intégré pour le bytecode appelé [OPcache](http://php.net/manual/fr/book.opcache.php). 
 Il est aussi disponible pour les versions précédentes.

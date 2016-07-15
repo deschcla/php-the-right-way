@@ -6,9 +6,9 @@ anchor:  behavior_driven_development
 
 ## Behavior Driven Development {#behavior_driven_development_title}
 
-Il existe 2 types de développement orienté comportement (BDD en anglais) : SpecBDD et StoryBDD. SpecBDD se concentre les 
+Il existe 2 types de développement orientés comportement (BDD en anglais) : SpecBDD et StoryBDD. SpecBDD se concentre sur les 
 aspects techniques du code alors que StoryBDD lui se concentre sur la partie métier, les fonctionnalités apportées ou 
-bien encore les interactions. Le PHP possède des frameworks pour ces  types de BDD.
+bien encore les interactions. Le PHP possède des frameworks pour ces types de BDD.
 
 Avec StoryBDD, vous écrivez des histoires "humainement" lisibles qui décrivent le comportement de votre application. 
 Ces histoires peuvent ensuite être transformées en tests se lançant sur votre application. Le framework utilisé dans 

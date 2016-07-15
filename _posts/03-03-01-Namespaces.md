@@ -8,21 +8,21 @@ anchor:  namespaces
 
 Comme mentionné plus haut, la communauté PHP a beaucoup de développeurs créant beaucoup de code. Cela signifie que le 
 code d'une bibliothèque PHP peut utiliser le même nom de classe qu'une autre bibliothèque. Quand plusieurs bibliothèques 
-sont utilisés dans le même espace de noms, il peut y avoir des collisions de noms ce qui pose problème.
+sont utilisées dans le même espace de nom, il peut y avoir des collisions de noms, ce qui pose problème.
 
-_Les espaces de noms_ résolvent ce problème. Comme décrit dans le manuel de référence PHP, les espaces de noms peuvent 
+_Les espaces de nom_ résolvent ce problème. Comme décrit dans le manuel de référence PHP, les espaces de nom peuvent 
 être comparés aux répertoires d'un système de fichiers. De même, 2 classes PHP peuvent avoir le même nom si elles sont 
-créées dans des espaces de noms distincts.
+créées dans des espaces de nom distincts.
 
-Il est important pour vous que vous utilisiez les espaces de noms dans votre code. Ainsi vous et d'autres développeurs 
+Il est important pour vous que vous utilisiez les espaces de nom dans votre code. Ainsi vous et d'autres développeurs 
 pourrez utiliser ce code sans crainte d'entrer en collision avec d'autres bibliothèques.
 
-Une bonne manière d'utiliser les espaces de noms se trouve dans [PSR-0][psr0] qui vise à fournir une fichier standard, 
-une convention pour les classes et les espaces de noms pour permettre d'avoir du code "plug-and-play".
+Une bonne manière d'utiliser les espaces de nom se trouve dans le [PSR-0][psr0] qui vise à fournir un fichier standard, 
+une convention pour les classes et les espaces de nom pour permettre d'avoir du code "plug-and-play".
 
-En décembre 2013, le PHP-FIG a crée un nouveau standard d'autochargement: [PSR-4][psr4], qui un jour va probablement 
+En décembre 2013, le PHP-FIG a créé un nouveau standard d'autochargement: [PSR-4][psr4], qui un jour va probablement 
 remplacer PSR-0. Pour le moment, les 2 sont utilisables étant donné que PSR-4 ne tourne que sur PHP 5.3+ et que 
-beaucoup de projets implémente PSR-0. Si vous allez utiliser un standard d'autochargement pour une nouvelle 
+beaucoup de projets implémentent PSR-0. Si vous pensez utiliser un standard d'autochargement pour une nouvelle 
 application ou un paquetage alors vous devriez certainement voir du côté de PSR-4.
 
 * [En savoir plus sur les espaces de noms][namespaces]

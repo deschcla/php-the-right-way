@@ -12,10 +12,10 @@ implémenter du code partagé. Différents dépôts de composants existent, les 
 * [Packagist](#composer_et_packagist)
 * [PEAR](#pear)
 
-Chacun de ces 2 dépôts possède des outils en ligne de commande qui leur sont associé afin d'installer et de mettre à 
+Chacun de ces 2 dépôts possède des outils en ligne de commande qui lui sont associés afin d'installer et de mettre à 
 jour les processus, ce qui est expliqué plus en détail dans la section [gestion des dépendances][dm].
 
-Il existe aussi des frameworks basé sur les composants qui vous permette d'utiliser leurs composants avec (ou sans) 
+Il existe aussi des frameworks basés sur les composants qui vous permettent d'utiliser leurs composants avec (ou sans) 
 conditions requises. Par exemple, vous pouvez utiliser le package pour la [validation de FuelPHP][fuelval] sans 
 l'obligation d'utiliser le framework tout entier. Ces projets sont essentiellement juste d'autres répertoires pour 
 la réutilisation de composants :

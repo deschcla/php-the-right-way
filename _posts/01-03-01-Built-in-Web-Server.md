@@ -7,7 +7,7 @@ anchor:  builtin_web_server
 ## Serveur web intégré {#builtin_web_server_title}
 
 Vous pouvez commencer à apprendre PHP sans avoir à installer et configurer un serveur web (vous devrez utiliser au 
-minimum PHP 5.4). Pour démarrer le serveur intégré, exécuter la ligne de commande suivante dans un terminal à la racine 
+minimum PHP 5.4). Pour démarrer le serveur intégré, exécutez la ligne de commande suivante dans un terminal à la racine 
 de votre projet :
 
     > php -S localhost:8000

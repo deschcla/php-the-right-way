@@ -10,7 +10,7 @@ surement utiliser plusieurs d'entre-eux — ce sont les dépendances d'un projet
 moyen fiable pour gérer ces dépendances. Même si vous les gériez de façon manuelle, vous deviez toujours vous 
 inquiétez des autoloaders. Mais plus maintenant.
 
-À l'heure actuelle, ils existent 2 gestionnaire de packaging pour PHP - Composer et PEAR. Lequel correspond le mieux à 
+À l'heure actuelle, ils existent 2 gestionnaires de packaging pour PHP - Composer et PEAR. Lequel correspond le mieux à 
 vos attentes ? Cela dépend de la taille de votre projet.
 
  * Utiliser **Composer** pour la gestion des dépendances d'un seul projet.

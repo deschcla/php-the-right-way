@@ -13,19 +13,19 @@ travaillez en équipe.
 Si vous développez sur Windows et que vous déployez votre code sur Linux (ou n'importe quoi qui ne soit pas Windows) 
 ou que vous travaillez en équipe, vous devriez penser à utiliser une machine virtuelle. Cela peut paraître compliqué mais 
 utiliser [Vagrant][vagrant] vous permet de mettre en place une machine virtuelle en seulement quelques étapes. 
-Ces systèmes de base peuvent ensuite être configuré manuellement ou via des outils comme [Puppet][puppet] ou 
+Ces systèmes de base peuvent ensuite être configurés manuellement ou via des outils comme [Puppet][puppet] ou 
 [Chef][chef]. Configurer ces systèmes de façon automatisé est un bon moyen de s'assurer que les différents systèmes 
 mis en place seront configurés de la même manière sans avoir à maintenir une liste de commandes pour l'installation. 
-Vous pouvez aussi "détruire" votre système et en recréez un nouveau de façon entièrement automatisé ce qui facilite 
+Vous pouvez aussi "détruire" votre système et en recréez un nouveau de façon entièrement automatisé, ce qui facilite 
 les nouvelles installations.
 
-Vagrant crée des dossiers partagés utilisé pour permettre à l'hôte et à la machine virtuelle d'accéder 
-de façon bidirectionnelle à votre code ce qui signifie que vous pouvez créer et éditer vos fichiers sur le système 
+Vagrant crée des dossiers partagés utilisés pour permettre à l'hôte et à la machine virtuelle d'accéder 
+de façon bidirectionnelle à votre code, ce qui signifie que vous pouvez créer et éditer vos fichiers sur le système 
 hôte et exécuter votre code sur la machine virtuelle.
 
 ### Un coup de pouce
 
-Si vous avez besoin d'aide pour commencer à utiliser Vagrant, il existe 3 services qui pourrait vous être utile :
+Si vous avez besoin d'aide pour commencer à utiliser Vagrant, il existe 3 services qui pourraient vous être utiles :
 
 - [Rove][rove]: Un service qui vous autorise à pré-générer des builds Vagrant typiques avec PHP. L'installation se fait 
 avec Chef.
