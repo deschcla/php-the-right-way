@@ -18,12 +18,12 @@ foreach ($db->query('SELECT * FROM table') as $row) {
 </ul>
 {% endhighlight %}
 
-Ceci est une mauvaise pratique pour toutes sortes de raisons, principalement du au fait qu'il est plus difficile à 
-déboguer, à lire et pour réaliser des tests.
+Ceci est une mauvaise pratique pour toutes sortes de raisons, principalement dû au fait que le code est plus difficile à 
+déboguer et à lire et qu'il est plus difficile de réaliser des tests.
 
 Bien qu'il existe un certain nombre de solutions pour parer à ce problème comme l'utilisation de la [POO](#programmation_oriente_objet) 
 ou bien la [programmation fonctionnelle](#programmation_fonctionnelle), les parties logiques de votre code doivent être 
-clairement délimités.
+clairement délimitées.
 
 Considérez l'exemple suivant :
 
@@ -38,7 +38,7 @@ foreach (getAllFoos() as $row) {
 }
 {% endhighlight %}
 
-C'est un bon début. La séparation entre l'interaction avec la base de données et l'affichage est déjà bien distincts.
+C'est un bon début. La séparation entre l'interaction avec la base de données et l'affichage est déjà bien distincte.
 
 Créez une classe où vous placerez les méthodes de votre code métier (votre "modèle"). Puis créez un fichier `.php` 
 qui contient la logique d'affichage (votre "vue") ce qui revient grosso-modo à utiliser le pattern [MVC] - un modèle 

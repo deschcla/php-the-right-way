@@ -6,7 +6,7 @@ anchor:  platform_as_a_service
 
 ## Platform as a Service (PaaS)  {#platform_as_a_service_title}
 
-Les PaaS fournissent l'architecture système et réseaux nécessaire pour faire tourner une application PHP sur le web. 
+Les PaaS fournissent l'architecture système et réseaux nécessaires pour faire tourner une application PHP sur le web. 
 Cela signifie qu'il n'y a pratiquement aucune configuration requise pour lancer des applications ou des frameworks PHP.
 
 Les PaaS sont devenues récemment une méthode populaire pour déployer, héberger et monter en puissance (notion de 

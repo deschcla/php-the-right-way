@@ -9,15 +9,15 @@ anchor:  object_caching
 Il arrive parfois qu'il soit plus avantageux de mettre en cache des objets individuels dans votre code comme par 
 exemple dans les cas où l'on souhaite récupérer le même résultat provenant d'une base de données. Vous pouvez utiliser 
 des logiciels de cache objet pour maintenir ces bouts de données en mémoire pour un usage ultérieur. Si vous enregistrez 
-ces éléments en mémoire après les avoir récupérer vous pouvez considérablement gagner en rapidité d'accès; de même 
+ces éléments en mémoire après les avoir récupérés, vous pouvez considérablement gagner en rapidité d'accès; de même 
 qu'une réduction de l'utilisation de la base de données.
 
-Beaucoup des solutions de cache du bytecode vous permettent de mettre aussi en cache les données; il y a donc encore 
+Beaucoup de solutions de cache du bytecode vous permettent de mettre aussi en cache les données; il y a donc encore 
 plus d'avantages à les utiliser. APCu, XCache, et WinCache fournissent tous des APIs pour stocker les données de votre 
 code PHP dans leur système de cache mémoire.
 
 Les systèmes de cache objet les plus courants sont APCu and memcached. APCu est un excellent choix en ce qui concerne 
-le cache objet, il inclut une API simple pour ajouter vos propres données dans son cache et est très facile à 
+le cache objet. Il inclut une API simple pour ajouter vos propres données dans son cache et est très facile à 
 configurer. La seule vraie limitation d'APCu est qu'il est lié au serveur où il est installé. Memcached, d'un autre 
 côté, s'installe de façon séparé en tant que service et peut être accédé depuis le réseau ce qui signifie que vous 
 pouvez stocker les objets dans un unique endroit même s'ils proviennent de systèmes différents.

@@ -92,7 +92,7 @@ class Singleton
     }
 
     /**
-     * Constructeur non publique afin d'éviter la création d'une nouvelle instance du *Singleton* via l'opérateur `new`
+     * Constructeur non public afin d'éviter la création d'une nouvelle instance du *Singleton* via l'opérateur `new`
      */
     protected function __construct()
     {
@@ -148,10 +148,10 @@ Cela permet d'hériter de la classe `Singleton` dans l'exemple.
 
 Le motif Singleton est utile quand on a besoin de s'assurer que seule une instance de classe est requise pour 
 l'ensemble du cycle de vie d'une application web. Cela arrive typiquement lorsque l'on a des objets globaux (tel 
-qu'une classe de configuration par ex.) ou une ressource partagée (comme un file d'évènement).
+qu'une classe de configuration par ex.) ou une ressource partagée (comme un fil d'évènement).
 
 Vous devriez faire attention lorsque vous utilisez le motif Singleton étant donné qu'il induit un état global à votre 
-application reduisant ainsi sa testabilité. Dans beaucoup de cas, l'injection de dépendances peut (et devrait) être 
+application réduisant ainsi sa testabilité. Dans beaucoup de cas, l'injection de dépendances peut (et devrait) être 
 utilisé à la place d'un singleton. Utiliser l'injection de dépendance signifie que nous n'introduisons pas de couplage 
 inutile dans la conception de notre application car l'objet utilisant une ressource partagée ou globale ne nécéssite 
 aucune connaissance de la classe concrète.

@@ -29,7 +29,7 @@ class Database
 class MysqlAdapter {}
 {% endhighlight %}
 
-Ce code peut être refactorisé pour utiliser l'injection de dépendance et ainsi délier l'adaptateur de la classe.
+Ce code peut être refactorisé pour utiliser l'injection de dépendances et ainsi délier l'adaptateur de la classe.
 
 {% highlight php %}
 <?php

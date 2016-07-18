@@ -37,7 +37,7 @@ l'administration d'un serveur. Notez que si vous utilisez mod_php5, vous DEVEZ u
 Alternativement, si vous voulez profiter de plus de perfomances et de stabilité avec Apache alors vous pouvez tirer 
 avantage à utiliser le même FPM que nginx et faire tourner le [worker MPM](http://httpd.apache.org/docs/2.4/mod/worker.html) 
 ou l'[event MPM](http://httpd.apache.org/docs/2.4/mod/event.html) avec mod_fastcgi ou mod_fcgid. Cette configuration 
-sera nettement meilleur en terme d'utilisation mémoire et plus rapide mais cela demandera plus de travail pour le 
+sera nettement meilleure en terme d'utilisation mémoire et plus rapide mais cela demandera plus de travail pour la 
 mettre en place.
 
 * [En savoir plus sur Apache](http://httpd.apache.org/)

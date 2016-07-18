@@ -27,17 +27,17 @@ Parmi les tâches que vous pourriez vouloir automatiser, vous trouverez:
 ### Outil de construction automatique
 
 Les outils de contruction automatique ("build tools" en anglais) peuvent être souvent vus comme un ensemble de scripts 
-gérant les tâches les plus répétitives pour le déploiement d'un logiciel. Il ne fait généralement pas parti du logiciel 
+gérant les tâches les plus répétitives pour le déploiement d'un logiciel. Ils ne font généralement pas parti du logiciel 
 en lui-même, agissant ainsi depuis l'extérieur.
 
-Il existe beaucoup d'outils open-source disponible pour vous aider à automatiser la construction de votre application, 
-certains étant même écrit en PHP. Cela ne devrait pas vous empêcher de les utiliser, si jamais ils correspondent mieux 
+Il existe beaucoup d'outils open-source disponibles pour vous aider à automatiser la construction de votre application, 
+certains étant même écrits en PHP. Cela ne devrait pas vous empêcher de les utiliser, si jamais ils correspondent mieux 
 au travail demandé. Voici quelques exemples:
 
 [Phing](http://www.phing.info/) est le moyen le plus facile pour commencer à utiliser le déploiement automatisé avec PHP. 
 Avec Phing, vous pouvez contrôler les processus de "packaging", de déploiement et d'exécution de tests à l'aide d'un 
 simple fichier XML. Phing (qui est basé sur [Apache Ant](http://ant.apache.org/)) fournit un riche ensemble de tâches 
-généralement nécessaire pour installer ou mettre à jour une application web et peut être amélioré avec l'ajout de 
+généralement nécessaires pour installer ou mettre à jour une application web et peut être amélioré avec l'ajout de 
 tâches personnalisées, écrit en PHP.
 
 [Capistrano](https://github.com/capistrano/capistrano/wiki) est un système pour les *programmeurs de niveau intermédiaire 
@@ -70,7 +70,7 @@ Allez plus loin:
 *-- Martin Fowler*
 
 Il existe différents moyens pour faire de l'intégration continue en PHP. [Travis CI](https://travis-ci.org/) a récemment 
-fait un excellent travail pour faire de l'intégration continue une réalité et ceux même pour de petits projets. Travis 
+fait un excellent travail pour faire de l'intégration continue une réalité et ce même pour de petits projets. Travis 
 CI est un service hébergé d'intégration continue pour la communauté open-source. IL est intégré à Github et offre un 
 support de haut niveau pour de nombreux langages (incluant PHP).
 

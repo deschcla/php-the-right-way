@@ -8,7 +8,7 @@ sitemap: true
 
 ## Opérateurs de comparaisons
 
-Les opérateurs de comparaison sont souvent un aspect négligé du PHP ce qui peut amener à obtenir
+Les opérateurs de comparaison sont souvent un aspect négligé du PHP, ce qui peut amener à obtenir
 des résultats inattendus. L'un de ces problèmes provient des comparaisons "strictes"
 (par ex., la comparaison des booléens en tant qu'entier).
 
@@ -30,7 +30,7 @@ if (strpos('testing', 'test')) {    // 'test' est trouvé à la position 0 qui e
 
 vs.
 
-if (strpos('testing', 'test') !== false) {    // true étant qu'une comparaison stricte est faite (0 !== false)
+if (strpos('testing', 'test') !== false) {    // true étant donné qu'une comparaison stricte est faite (0 !== false)
     // code...
 }
 {% endhighlight %}
@@ -76,8 +76,8 @@ function test($a)
 L'instruction 'switch' est un bon moyen d'éviter de taper un nombre d'instructions 'if/else if' sans fin mais il y a 
 plusieurs choses à savoir :
 - l'instruction 'switch' ne compare que la valeur de la variable, pas son type (équivalent à '==')
-- Le programme parcourt l'ensemble des cas définis par l'instruction 'case' jusqu'à trouvé une correspondance. 
-Si rien n'est trouvé alors l'instruction 'default' est utilisé (si elle est définie)
+- Le programme parcourt l'ensemble des cas définis par l'instruction 'case' jusqu'à trouver une correspondance. 
+Si rien n'est trouvé alors l'instruction 'default' est utilisée (si elle est définie)
 - Sans l'instruction 'break', le programme continuera de parcourir les cas possibles jusqu'à tomber sur une 
 instruction 'break/return' (si elle est définie)
 - À l'intérieur d'une fonction, utiliser l'instruction 'return' supprime le besoin d'une instruction 'break' étant 
@@ -110,8 +110,8 @@ function test($a)
 
 ## Espace de noms global
 
-Vous pouvez trouver lors de l'utilisation d'espace de noms que les fonctions "internes" sont cachés par les fonctions 
-que vous écrivez. Pour régler ce problème, vous devez vous référer à l'espace de noms globale en utilisant un 
+Vous pouvez trouver lors de l'utilisation d'espace de noms que les fonctions "internes" sont cachées par les fonctions 
+que vous écrivez. Pour régler ce problème, vous devez vous référer à l'espace de noms global en utilisant un 
 'backslash' devant le nom de vos fonctions.
 
 {% highlight php %}
@@ -190,10 +190,10 @@ echo 'Voici ma chaîne de caractères, regardez comme elle est jolie.';    // pa
 
 #### Guillemet double
 
-Les guillemets doubles sont le couteau suisse des chaînes de caractères mais sont cependant plus lentes étant donné
-qu'elles doivent être analysés. Ils sont utiles pour :
+Les guillemets doubles sont le couteau suisse des chaînes de caractères mais sont cependant plus lents étant donné
+que celles-ci doivent être analysées. Ils sont utiles pour :
 
-- Les chaînes contenant des caractères échappées (par ex., \n, \", etc)
+- Les chaînes contenant des caractères échappés (par ex., \n, \", etc)
 - Les chaînes contenant à la fois du texte brut et des variables à l'intérieur
 - une meilleur lisibilité
 
@@ -224,7 +224,7 @@ $abricot = 'abricot';
 echo "J'ai bu du jus à base de {$abricot}s";    // $abricot est correctement traité
 
 /**
- * Les variables complexes seront aussi analysés à l'intérieur des accolades
+ * Les variables complexes seront aussi analysées à l'intérieur des accolades
  */
 
 $jus = array('pomme', 'orange', 'abricot');
@@ -242,9 +242,9 @@ excepté le fait que qu'elle est plus pratique pour écrire plusieurs lignes san
 <?php
 $str = <<<'EOD'             // débute par <<<
 Exemple de chaine
-s'etendant sur plusieurs lignes
+s'étendant sur plusieurs lignes
 et utilisant la syntaxe Nowdoc
-$a n'est pas evalue.
+$a n'est pas évalué.
 EOD;                        // le mot 'EOD' termine la chaîne. Il doit se trouver au début d'une nouvelle ligne
 
 /**
@@ -270,9 +270,9 @@ $a = 'Variables';
 
 $str = <<<EOD               // débute par <<<
 Exemple de chaine
-s'etendant sur plusieurs lignes
+s'étendant sur plusieurs lignes
 et utilisant la syntaxe Heredoc
-$a est analyse.
+$a est analysé.
 EOD;                        // le mot 'EOD' termine la chaîne. Il doit se trouver au début d'une nouvelle ligne
 
 /**
@@ -291,7 +291,7 @@ EOD;                        // le mot 'EOD' termine la chaîne. Il doit se trouv
 
 L'opérateur ternaire est un bon moyen de condenser la paire d'instruction 'if/else' mais est trop souvent utilisé. 
 Bien que les opérateurs ternaires puissent se trouver à l'intérieur d'autres opérateurs ternaires, il est souvent 
-conseillé de n'en utiliser qu'une seule par ligne par souci de lisibilité.
+conseillé de n'en utiliser qu'un seul par ligne par souci de lisibilité.
 
 {% highlight php %}
 <?php
@@ -336,7 +336,7 @@ return ($a == 5) ? 'yay' : 'nope';    // cet exemple renvoie 'yay'
 ## Déclaration de variables
 
 Parfois, les programmeurs essaient de rendre leur code plus "propre" en déclarant des variables prédéfinies avec un 
-autre nom. Ce qu'il se passe en réalité, c'est que la consommation mémoire va doubler. Avec l'exemple ci-dessous, 
+autre nom. Ce qui se passe en réalité, c'est que la consommation mémoire va doubler. Avec l'exemple ci-dessous, 
 disons que la chaîne de caractères contient 1Mio de données. En copiant cette variable, le poids de l'exécution de ce 
 script passera alors à 2Mio.
 

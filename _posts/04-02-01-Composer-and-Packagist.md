@@ -6,11 +6,11 @@ anchor:  composer_and_packagist
 
 ## Composer et Packagist {#composer_and_packagist_title}
 
-Composer un **excellent** gestionnaire de dépendances pour PHP. Listez les dépendances de votre projet dans un fichier 
+Composer est un **excellent** gestionnaire de dépendances pour PHP. Listez les dépendances de votre projet dans un fichier 
 `composer.json` et en quelques commandes, Composer va automatiquement télécharger ces dépendances et les installer pour 
 vous.
 
-Il existe déjà un grand nombre de bibliothèques PHP compatibles avec Composer, prêtes à être utiliser par votre projet. 
+Il existe déjà un grand nombre de bibliothèques PHP compatibles avec Composer, prêtes à être utilisées par votre projet. 
 Ces "paquets" sont listés sur [Packagist][1], le répertoire officiel pour les bibliothèques compatibles avec Composer.
 
 ### Comment installer Composer
@@ -21,7 +21,7 @@ Depuis la racine de votre projet, tapez :
 
     curl -s https://getcomposer.org/installer | php
 
-Cela va télécharger `composer.phar` qui est une archive PHP binaire. Vous pouvez le lancer avec `php` pour gérer vos 
+Cela va télécharger `composer.phar` qui est une archive PHP binaire. Vous pouvez la lancer avec `php` pour gérer vos 
 dépendances. <strong>Attention : </strong> Si vous redirigez du code téléchargé directement dans un interpréteur, 
 veuillez d'abord lire le code en ligne pour confirmer qu'il est sûr.
 
@@ -55,7 +55,7 @@ substituer cette commande avec:
 
     composer install
   
-La section suivante assume le fait que vous avez installé composer "globlalement".  
+La section suivante assume le fait que vous avez installé Composer "globlalement".  
 
 ### Comment définir et installer les dépendances
 
@@ -68,7 +68,7 @@ pour votre projet:
 
 Alternativement, la commande `composer init` va vous guider à travers la création du fichier `composer.json`. De toute 
 manière, une fois que ce fichier est créé, vous pouvez indiquer à Composer de télécharger et d'installer vos dépendances 
-dans le répertoire `vendors/`. Cela s'applique aussi aux projets que vous avez téléchargé et qui possèdent déjà un 
+dans le répertoire `vendors/`. Cela s'applique aussi aux projets que vous avez téléchargés et qui possèdent déjà un 
 fichier `composer.json`:
 
     composer install
@@ -81,11 +81,11 @@ l'auto-chargeur de Composer pour les dépendances de votre projet:
 require 'vendor/autoload.php';
 {% endhighlight %}
 
-Maintenant si vous utiliser les bibliothèques dont votre projet est dépendant, elles seront chargées à la demande.
+Maintenant si vous utilisez les bibliothèques dont votre projet est dépendant, elles seront chargées à la demande.
 
 ### Mettre à jour vos dépendances
 
-Composer crée un fichier appelé `composer.lock` qui stocke la version exacte de chaque paquets qui a été téléchargé 
+Composer crée un fichier appelé `composer.lock` qui stocke la version exacte de chaque paquets qui a été téléchargée 
 quand vous avez exécuté pour la première fois `php composer.phar install`. Si vous partagez votre projet avec 
 d'autres développeurs et que le fichier `composer.lock` y est inclu alors ils auront les mêmes versions que vous. Pour 
 mettre à jour ces dépendances, exécuter `php composer.phar update`.
@@ -98,7 +98,7 @@ la dernière version en suivant les restrictions demandées.
 ### Notifications de mise à jour
 
 Pour recevoir les notifications de nouvelles versions vous pouvez vous enregistrer sur [VersionEye][3] qui est un 
-service web qui surveille vos fichiers `composer.json` sur vos comptes Github et BitBucket  et vous envoie des emails 
+service web qui surveille vos fichiers `composer.json` sur vos comptes Github et BitBucket et vous envoie des emails 
 avec les nouvelles versions.
 
 ### Vérifier vos dépendances pour des raisons de sécurité

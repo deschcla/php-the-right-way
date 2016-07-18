@@ -13,7 +13,7 @@ la version de développement et celle pour la production.
 
 ### Développement
 
-Pour afficher toutes les erreurs possible durant le <strong>dévelopement</strong>, configurer les paramètres suivants 
+Pour afficher toutes les erreurs possible durant le <strong>dévelopement</strong>, configurez les paramètres suivants 
 dans votre fichier `php.ini`:
 
     display_errors = On
@@ -37,7 +37,7 @@ d'utiliser soit `-1` ou `E_ALL | E_STRICT`.
 
 ### Production
 
-Pour cacher l'affichage d'erreurs dans votre environnement de <strong>production</strong>, configurer votre fichier 
+Pour cacher l'affichage d'erreurs dans votre environnement de <strong>production</strong>, configurez votre fichier 
 `php.ini` de cette façon:
 
     display_errors = Off
@@ -46,7 +46,7 @@ Pour cacher l'affichage d'erreurs dans votre environnement de <strong>production
     log_errors = On
 
 Avec ces paramètres, les erreurs seront toujours enregistrées dans les journaux d'erreurs de votre serveur web mais ne 
-seront pas afficher à l'utilisateur. Pour plus d'informations sur ces paramètres, voir le manuel PHP:
+seront pas affichées à l'utilisateur. Pour plus d'informations sur ces paramètres, voir le manuel PHP:
 
 * [error_reporting](http://php.net/manual/errorfunc.configuration.php#ini.error-reporting)
 * [display_errors](http://php.net/manual/errorfunc.configuration.php#ini.display-errors)
