@@ -230,7 +230,7 @@ class SomeClient
 {% endhighlight %}
 
 La classe cliente ci-dessus a une propriété privée qui doit être fixée à l'exécution et doit être de type 
-'OutputInterface'. Une fois que cette propriété est fixée, un appel à loadOutput() va appelée la méthode load() de 
+'OutputInterface'. Une fois que cette propriété est fixée, un appel à loadOutput() va appeler la méthode load() de 
 la classe concrète du type de sortie demandé.
 {% highlight php %}
 <?php
