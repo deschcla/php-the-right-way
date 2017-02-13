@@ -18,7 +18,7 @@ dépendances en les contrôlant et en les instanciant ailleurs dans le système.
 
 Pendant des années, les frameworks PHP ont fait de l'inversion de contrôle, cependant la question est devenue : quelle 
 partie du contrôle doit-on inverser ? et vers où ? Par exemple, les frameworks MVC fourniront généralement un super 
-objet ou un contrôleur de base dont les autres contrôleurs doivent hérités pour avoir accès à ses dépendances. C'est 
+objet ou un contrôleur de base dont les autres contrôleurs doivent hériter pour avoir accès à ses dépendances. C'est 
 **ça** l'inversion de contrôle, cependant, au lieu de séparer les différentes dépendances, cette méthode ne fait que les 
 déplacer.
 
