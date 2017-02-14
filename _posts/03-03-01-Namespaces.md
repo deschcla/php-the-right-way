@@ -11,7 +11,7 @@ code d'une bibliothèque PHP peut utiliser le même nom de classe qu'une autre b
 sont utilisées dans le même espace de nom, il peut y avoir des collisions de noms, ce qui pose problème.
 
 _Les espaces de nom_ résolvent ce problème. Comme décrit dans le manuel de référence PHP, les espaces de nom peuvent 
-être comparés aux répertoires d'un système de fichiers. De même, 2 classes PHP peuvent avoir le même nom si elles sont 
+être comparés aux répertoires d'un système de fichiers. De même, deux classes PHP peuvent avoir le même nom si elles sont 
 créées dans des espaces de nom distincts.
 
 Il est important pour vous que vous utilisiez les espaces de nom dans votre code. Ainsi vous et d'autres développeurs 
