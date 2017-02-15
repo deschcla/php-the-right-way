@@ -7,7 +7,7 @@ anchor:  command_line_interface
 ## L'interface en ligne de commande {#command_line_interface_title}
 
 Le PHP a été créé principalement pour écrire des applications web mais il peut être tout aussi utile pour écrire des 
-programmes en ligne de commande (command line interface ou CLI en anglais). Ces programmes peuvent vous aider à 
+programmes en ligne de commande (_command line interface_ ou CLI en anglais). Ces programmes peuvent vous aider à 
 automatiser les tâches les plus courantes comme les tests, le déploiement et l'administration du site.
 
 Les programmes PHP CLI sont puissants car vous pouvez directement utiliser le code de votre application sans avoir à 
@@ -39,7 +39,7 @@ echo "Hello, $nom\n";
 {% endhighlight %}
 
 Le PHP crée 2 variables spéciales basées sur les paramètres passés au script. La variable [`$argc`][argc] est un entier 
-contenant le *nombre de paramètres* et [`$argv`][argv] est un tableau contenant chacune des valeurs des paramètres. Le premier 
+contenant le *nombre de paramètres* et [`$argv`][argv] est un tableau contenant chacune des *valeurs des paramètres*. Le premier 
 paramètre est toujours le nom du script PHP, dans notre cas `hello.php`.
 
 L'expression `exit()` est utilisée avec un nombre différent de zéro pour indiquer au terminal que la commande a échoué. Les 
