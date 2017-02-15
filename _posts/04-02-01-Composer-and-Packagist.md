@@ -32,7 +32,7 @@ depuis votre terminal.
 
 ### Comment installer Composer (manuellement)
 
-Installer manuellement Composer est une technique avancée; Cependant, ils existent diverses raisons pour lesquelles un 
+Installer manuellement Composer est une technique avancée, cependant il existe diverses raisons pour lesquelles un 
 développeur aurait besoin de le faire. L'installation interactive va vérifier que la version installée:
 
 - contient une version suffisamment récente pour être utilisable
@@ -55,7 +55,7 @@ substituer cette commande avec:
 
     composer install
   
-La section suivante assume le fait que vous avez installé Composer "globlalement".  
+La section suivante part du principe que vous avez installé Composer "globlalement".  
 
 ### Comment définir et installer les dépendances
 
@@ -85,10 +85,10 @@ Maintenant si vous utilisez les bibliothèques dont votre projet est dépendant,
 
 ### Mettre à jour vos dépendances
 
-Composer crée un fichier appelé `composer.lock` qui stocke la version exacte de chaque paquets qui a été téléchargée 
+Composer crée un fichier appelé `composer.lock` qui stocke la version exacte de chaque paquet qui a été téléchargé 
 quand vous avez exécuté pour la première fois `php composer.phar install`. Si vous partagez votre projet avec 
-d'autres développeurs et que le fichier `composer.lock` y est inclu alors ils auront les mêmes versions que vous. Pour 
-mettre à jour ces dépendances, exécuter `php composer.phar update`.
+d'autres développeurs et que le fichier `composer.lock` y est inclus alors ils auront les mêmes versions que vous. Pour 
+mettre à jour toutes les dépendances, exécuter `php composer.phar update`.
 
 Cela est très pratique quand vous définissez les versions requises de façon flexible. Par exemple, une version exigée de 
 ~1.8 signifie "tout ce qui est plus récent que 1.8.0 mais inférieur à 2.0.x-dev". Vous pouvez aussi utiliser le joker `*` 
