@@ -6,14 +6,14 @@ anchor: code_style_guide
 # Normes  {#code_style_guide_title}
 
 La communauté PHP est large et diverse, composée d'innombrables bibliothèques, de frameworks et de composants. Il est 
-courant pour les développeurs PHP de choisir plusieurs d'entre-eux et de les combiner en un seul projet. Il est important 
+courant pour les développeurs PHP de choisir plusieurs d'entre eux et de les combiner en un seul projet. Il est important 
 que le code PHP adhère (de façon aussi proche que possible) à un style commun pour rendre le partage plus facile 
 entre développeurs et de garder une certaine cohérence avec l'utilisation de code tiers.
 
 Le [Framework Interop Group][fig] a proposé et approuvé une série de conventions de codage. Celles qui sont liées aux 
 conventions d'écriture sont le [PSR-0][psr0], le [PSR-1][psr1], le [PSR-2][psr2] et le [PSR-4][psr4]. Ces recommandations sont 
 un ensemble de règles que certains projets ont adoptées comme Drupal, Zend, Symfony, CakePHP, phpBB, AWS SDK, 
-FuelPHP, Lithium, etc. Vous pouvez les utiliser dans vos projets ou bien la votre si vous en avez une.
+FuelPHP, Lithium, etc. Vous pouvez les utiliser dans vos projets ou bien la vôtre si vous en avez une.
 
 Idéalement, vous devriez écrire du code PHP qui adhère à des standards connus. Cela peut être une combinaison des PSR ou 
 un des standards créés par PEAR ou Zend.
