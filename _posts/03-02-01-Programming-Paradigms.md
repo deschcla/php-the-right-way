@@ -6,14 +6,14 @@ anchor:  programming_paradigms
 
 ## Les paradigmes de programmation {#programming_paradigms_title}
 
-Le PHP est un langage flexible, dynamique supportant une variété de techniques de programmation. Il a énormément évolué au 
+Le PHP est un langage flexible et dynamique, supportant une variété de techniques de programmation. Il a énormément évolué au 
 cours des années en ajoutant notamment un solide modèle orienté objet avec PHP 5.0 (2004), les fonctions anonymes et 
 les espaces de noms avec PHP 5.3 (2009) et les "traits" avec PHP 5.4 (2012).
 
 ### Programmation orientée objet
 
 Le PHP a un ensemble très complet de principes de programmation orientée objet en prenant en compte le support des classes, 
-des classes abstraites, des interfaces, de l'héritage, des constructeurs, du clônage, des exceptions, etc. 
+des classes abstraites, des interfaces, de l'héritage, des constructeurs, du clonage, des exceptions, etc. 
 
 * [En savoir plus sur l'orienté objet][oop]
 * [En savoir plus sur les "traits"][traits]
@@ -28,7 +28,7 @@ parle alors de fonctions d'ordre supérieur) et elles peuvent retourner d'autres
 La récursion est une fonctionnalité permettant à une fonction de s'appeler elle-même, cependant la plupart des fonctions 
 PHP se concentrent sur la partie "itération".
 
-Les nouvelles fonctions anonymes avec le support pour les fermetures (closures en anglais) sont présentes depuis 
+Les nouvelles fonctions anonymes avec le support pour les fermetures (_closures_ en anglais) sont présentes depuis 
 PHP 5.3 (2009).
 
 Le PHP 5.4 a rajouté la possibilité de lier ("bind") les fermetures à la portée d'un objet et a aussi amélioré le support pour 
@@ -44,11 +44,11 @@ cas).
 
 ### Méta-programmation
 
-Le PHP supporte différentes formes de méta-programmations à travers des mécanismes tel que l'API Reflection et les 
+Le PHP supporte différentes formes de méta-programmation à travers des mécanismes tels que l'API Reflection et les 
 méthodes magiques. Il existe un grand nombre de méthodes magiques comme `__get()`, `__set()`, `__clone()`, 
 `__toString()`, `__invoke()`, etc permettant aux développeurs d'interférer avec le comportement d'une classe. Les 
 développeurs Ruby répètent souvent que le PHP manque de `method_missing` mais cela est pourtant disponible avec 
-`__call()` and `__callStatic()`.
+`__call()` et `__callStatic()`.
 
 * [En savoir plus sur les méthodes magiques][magic-methods]
 * [En savoir plus sur l'API Reflection][reflection]
