@@ -7,7 +7,7 @@ anchor:  interacting_via_code
 ## Interagir avec les bases de données {#interacting_via_code_title}
 
 Quand les développeurs commencent à utiliser PHP, ils finissent souvent par mélanger le code métier avec celui gérant 
-la base de données et l'affichage ce qui donne quelque chose de ce genre là :
+la base de données et l'affichage, ce qui donne quelque chose de ce genre :
 
 {% highlight php %}
 <ul>
@@ -29,7 +29,7 @@ Considérez l'exemple suivant :
 
 {% highlight php %}
 <?php
-function getAllSomethings($db) {
+function getAllFoos($db) {
     return $db->query('SELECT * FROM table');
 }
 
