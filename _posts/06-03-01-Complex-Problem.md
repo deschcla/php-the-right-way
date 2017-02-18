@@ -1,5 +1,5 @@
 ---
-title:   Problèmes complexe
+title:   Problèmes complexes
 isChild: true
 anchor:  complex_problem
 ---
@@ -17,17 +17,17 @@ organisationnel entièrement séparé des objets. En terme d'injection de dépen
 dépendances en les contrôlant et en les instanciant ailleurs dans le système.
 
 Pendant des années, les frameworks PHP ont fait de l'inversion de contrôle, cependant la question est devenue : quelle 
-partie du contrôle doit-on inverser ? et vers où ? Par exemple, les frameworks MVC fourniront généralement un super 
-objet ou un contrôleur de base dont les autres contrôleurs doivent hériter pour avoir accès à ses dépendances. C'est 
-**ça** l'inversion de contrôle, cependant, au lieu de séparer les différentes dépendances, cette méthode ne fait que les 
+partie du contrôle doit-on inverser ? Et vers où ? Par exemple, les frameworks MVC fourniront généralement un super-objet
+ou un contrôleur de base dont les autres contrôleurs doivent hériter pour avoir accès à ses dépendances. C'est 
+**ça** l'inversion de contrôle, cependant au lieu de séparer les différentes dépendances, cette méthode ne fait que les 
 déplacer.
 
 L'injection de dépendances nous permet de résoudre ce problème de façon plus élégante en injectant uniquement les dépendances 
-dont nous avons besoin, quand nous avons besoin et ceux sans avoir à écrire en dur quelques dépendances que ce soit.
+dont nous avons besoin, quand nous avons besoin et ce sans avoir à écrire en dur quelque dépendance que ce soit.
 
 ### Principe d'inversion des dépendances
 
-Le principe d'inversion des dépendances (en anglais Dependency Inversion Principle) correspond au "D" dans "S.O.L.I.D." 
+Le principe d'inversion des dépendances (en anglais _Dependency Inversion Principle_) correspond au "D" dans "S.O.L.I.D." 
 qui est un ensemble de principes et de conceptions orientés objet. Il est dit que l'on doit *"dépendre des abstactions et 
 non des implémentations."*. Cela signifie que nos dépendances doivent se faire sur des interfaces/contrats ou encore sur 
 des classes abstraites plutôt que sur des classes "concrètes". Nous pouvons facilement refactoriser l'exemple ci-dessus 
@@ -60,6 +60,6 @@ l'utiliser dans nos tests unitaires. Maintenant que la dépendance correspond à
 objet factice implémentant cette interface en sachant que notre collègue constuira l'adaptateur en respectant le contrat 
 de base.
 
-Un bénéfice encore plus grand de cette méthode est que notre code est maintenant plus facilement évolutif (scalable en anglais). 
+Un bénéfice encore plus grand de cette méthode est que notre code est maintenant plus facilement évolutif (_scalable_ en anglais). 
 Si dans un an nous décidons que nous voulons migrer sur un autre type de base de données alors nous n'avons qu'à écrire et 
 utiliser l'adaptateur qui implémente l'interface spécifique et ainsi, nous n'avons plus besoin de refactoriser du code.
