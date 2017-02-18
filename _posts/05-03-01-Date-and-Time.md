@@ -7,8 +7,8 @@ anchor:  date_and_time
 ## La date et le temps {#date_and_time_title}
 
 Le PHP a une classe nommée DateTime afin d'aider à lire, écrire, comparer et calculer avec les dates et le temps. Il existe 
-beaucoup de fonctions liées aux dates en PHP, en plus de DateTime, mais cette dernière fournit une interface orientée objet à 
-la plupart des usages courants. Il peut gérer les fuseaux horaires mais cela dépasse le cadre de notre introduction.
+beaucoup de fonctions liées aux dates en PHP en plus de DateTime, mais cette dernière fournit une interface orientée objet à 
+la plupart des usages courants. Elle peut gérer les fuseaux horaires mais cela dépasse le cadre de notre introduction.
 
 Pour commencer à travailler avec DateTime, convertissez les chaînes de caractères représentant des dates ou du temps avec 
 la méthode `createFromFormat()` ou faites `new \DateTime`. Utilisez la méthode `format()` pour convertir la date 
@@ -26,7 +26,7 @@ Le calcul des dates avec DateTime est possible à l'aide de la classe DateInterv
 et `sub()` qui prennent une variable de type DateInterval en argument. N'écrivez pas du code qui attend que chaque jour 
 ait le même nombre de secondes car le passage à l'heure d'été/d'hiver et les changements de fuseaux horaires brisent cette 
 assertion. Utilisez plutôt les intervalles de date. Pour calculer ces différences, utilisez la méthode `diff()`. Cette 
-dernière va retourner un objet DateInterval qui est super facile à afficher.
+dernière va retourner un objet DateInterval qui est très facile à afficher.
 
 {% highlight php %}
 <?php
@@ -39,7 +39,7 @@ echo 'Différence: ' . $diff->format('%m mois, %d jours (total: %a jours)') . "\
 // Différence: 1 mois, 6 jours (total: 37 jours)
 {% endhighlight %}
 
-Avec les objets DateTime vous pouvez utilisez les opérateurs de comparaison:
+Avec les objets DateTime vous pouvez utilisez les opérateurs de comparaison :
 {% highlight php %}
 <?php
 if ($start < $end) {
