@@ -20,6 +20,6 @@ l'en-tête et le pied de page de votre site peuvent être définis dans des temp
 respectivement au début et à la fin de chaque template d'une page.
 
 Finalement, selon la bibliothèque que vous utilisez, les templates peuvent vous offrir plus de sécurité en échappant 
-par exemple automatiquement les variables définis par les entrées d'un utilisateur. Quelques bibliothèques vous offre 
-même la possibilité d'isoler les variables et les fonctions (on parlera de "sand-boxing") définis dans une liste blanche 
-de façon, par ex., à limiter les dégats collatéraux provoqués par une mauvaise utilisation faites par les designers.
+par exemple automatiquement les variables définis par les entrées d'un utilisateur. Quelques bibliothèques vous offrent 
+même la possibilité d'isoler les variables et les fonctions (on parlera de _sandboxing_) définis dans une liste blanche 
+de façon, par exemple, à limiter les dégats collatéraux provoqués par une mauvaise utilisation faites par les designers.
