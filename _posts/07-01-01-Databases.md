@@ -5,40 +5,40 @@ anchor: databases
 
 # Bases de données {#databases_title}
 
-Votre code PHP va souvent faire appel aux base de données pour préserver l'information. Vous avez un certain nombre 
+Votre code PHP va souvent faire appel aux bases de données pour préserver l'information. Vous avez un certain nombre 
 d'options pour vous connecter et interagir avec votre base de données. L'option recommandée _avant PHP 5.1.0_ était 
 d'utiliser les pilotes natifs tels que [mysql][mysql], [mysqli][mysqli], [pgsql][pgsql], etc.
 
 Les pilotes natifs sont géniaux si vous n'utilisez qu'un seul type de base de données dans votre application mais si, 
-par exemple, vous utilisez MySQL et un peu de MSSQL ou vous avez besoin de vous connecter à une base Oracle alors vous 
+par exemple, vous utilisez MySQL et un peu de MSSQL, ou vous avez besoin de vous connecter à une base Oracle alors vous 
 ne pourrez pas utiliser les mêmes pilotes. Vous aurez besoin d'apprendre une nouvelle API pour chaque type de BDD &mdash; ce 
 qui peut devenir lourd.
 
 ## Extension MySQL
 
 L'extension [mysql] pour PHP est aujourd'hui au point mort et est [officiellement dépréciée depuis PHP 5.5.0](http://php.net/manual/fr/migration55.deprecated.php) ce qui
-signifie qu'elle sera retirée dans les prochaines versions. Si vous utilisez n'importe quelles fonctions commençant par 
+signifie qu'elle sera retirée dans les prochaines versions. Si vous utilisez n'importe quelle fonction commençant par 
 `mysql_*` (comme `mysql_connect()`) dans votre application alors cela donnera des erreurs dans votre code. Vous serez 
 donc obligé de faire la transition vers [mysqli] ou [PDO].
 
 **Si vous venez de commencer votre projet alors n'utilisez surtout pas l'extension [mysql] mais préférez [mysqli] ou PDO**
 
 * [PHP: Choisir une API pour MySQL](http://php.net/manual/fr/mysqlinfo.api.choosing.php)
-* [Tutoriel sur les PDO pour les développeurs MySQL](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)
+* [Tutoriel sur PDO pour les développeurs MySQL](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)
 
 ## PDO
 
-Le PDO est une couche d'abstraction pour se connecter à une base de données &mdash; intégrée à PHP depuis la 5.1.0 &mdash; 
-qui fournit une interface commune pour communiquer avec différentes base de données. Le PDO ne va pas traduire vos requêtes 
-SQL ou émuler les fonctionnalités manquantes; il ne gère que la connexion entre différents types de base de données avec 
+PDO est une couche d'abstraction pour se connecter à une base de données &mdash; intégrée à PHP depuis la version 5.1.0 &mdash; 
+qui fournit une interface commune pour communiquer avec différentes bases de données. PDO ne va pas traduire vos requêtes 
+SQL ou émuler les fonctionnalités manquantes; il ne gère que la connexion entre différents types de bases de données avec 
 la même API.
 
-Plus important encore, le `PDO` vous permet d'injecter en toute sécurité des entrées étrangères (par ex., les identifiants) 
+Plus important encore, PDO vous permet d'injecter en toute sécurité des entrées étrangères (par ex., les identifiants) 
 dans vos requêtes SQL sans que vous ayez à vous soucier des attaques par injection SQL. Cela est rendu possible grâce à 
 l'utilisation des fonctions de PDO et des paramètres liés.
 
 Supposons qu'un script PHP reçoit un identifiant numérique en tant que paramètre d'entrée. Cet ID devrait être utilisé 
-pour récupérer les enregistrements d'un utilisateur dans la base de données. Voici la mauvaise façon de s'y prendre:
+pour récupérer les enregistrements d'un utilisateur dans la base de données. Voici la mauvaise façon de s'y prendre :
 
 {% highlight php %}
 <?php
@@ -49,7 +49,7 @@ $pdo->query("SELECT name FROM users WHERE id = " . $_GET['id']); // <-- NON!
 Ce code est mauvais. Vous insérez un paramètre en brut directement dans une requête SQL. C'est la porte ouverte pour 
 le piratage comme [l'injection SQL](http://wiki.hashphp.org/Validation). Imaginez un instant que si un pirate envoie un paramètre `id` en invoquant l'URL 
 `http://domain.com/?id=1%3BDELETE+FROM+users`. Cela va définir la variable `$_GET['id']` à `1;DELETE FROM users` ce qui 
-va effacer l'ensemble de vos utilisateurs! Au lieu de faire ça, vous devriez nettoyer les entrées en utilisant la liaison 
+va effacer l'ensemble de vos utilisateurs ! Au lieu de faire ça, vous devriez nettoyer les entrées en utilisant la liaison 
 des paramètres avec PDO.
 
 {% highlight php %}
@@ -61,7 +61,7 @@ $stmt->execute();
 {% endhighlight %}
 
 Voici le code correct. Il utilise un paramètre lié à une expression PDO. Cela "échappe" les entrées étrangères avant 
-qu'elles ne soient introduites à la base de données, ce qui empêche les attaques potentielles d'injection SQL.
+qu'elles ne soient introduites dans la base de données, ce qui empêche les attaques potentielles par injection SQL.
 
 * [En savoir plus sur PDO][1]
 
@@ -79,12 +79,12 @@ sûr que vous n'utilisiez une connexion persistante.
 Beaucoup de frameworks fournissent leur propre couche d'abstraction qui peut être ou non basée sur PDO. Cette couche va 
 souvent émuler les fonctionnalités d'une base de données qui seraient manquantes dans une autre base en enveloppant 
 vos requêtes dans des méthodes PHP vous donnant ainsi une réelle abstraction avec la base de données.
-Cela engendre évidemment un légèr surplus mais si vous voulez développez une application portable ayant besoin de 
+Cela engendre évidemment un léger surplus mais si vous voulez développer une application portable ayant besoin de 
 communiquer avec MySQL, PostgreSQL et SQLite alors ce petit surplus en vaudra la peine par souci de propreté et de 
 maintenance du code.
 
 Plusieurs couches d'abstractions ont été construites en utilisant les standards d'espace de noms [PSR-0][psr0] ou 
-[PSR-4][psr4]; elles peuvent donc être installées dans n'importe quelle application qui vous plaira:
+[PSR-4][psr4]; elles peuvent donc être installées dans n'importe quelle application qui vous plaira :
 
 * [Aura SQL][6]
 * [Doctrine2 DBAL][2]
