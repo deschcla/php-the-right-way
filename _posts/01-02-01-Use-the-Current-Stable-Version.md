@@ -22,4 +22,4 @@ représente d'*importantes améliorations*. Si vous cherchez des informations su
 
 [php-release]: http://www.php.net/downloads.php
 [php-docs]: http://www.php.net/manual/fr/
-[php-compatibility-breaks]: http://php.net/manual/fr/migration70.incompatible.php
+[php-compatibility-breaks]: http://php.net/manual/fr/migration71.incompatible.php
