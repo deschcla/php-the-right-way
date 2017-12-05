@@ -69,7 +69,7 @@ Notez que pour utiliser le support complet pour UTF-8, vous devez utiliser l'enc
 Utilisez la fonction `mb_http_output()` pour vous assurer que votre script PHP affichera du texte en UTF-8 dans votre 
 navigateur.
 
-La navigateur devra ensuite être averti par le biais de la réponse HTTP que cette page est encodée en UTF-8. L'approche 
+Le navigateur devra ensuite être averti par le biais de la réponse HTTP que cette page est encodée en UTF-8. L'approche 
 historique pour faire cela était d'inclure le [tag `<meta>`](http://htmlpurifier.org/docs/enduser-utf8.html) dans le tag 
 `<head>`. Cette approche est parfaitement valide mais indiquer l'encodage directement dans l'en-tête HTTP `Content-Type` 
 est en fait [plus rapide](https://developers.google.com/speed/docs/best-practices/rendering#SpecifyCharsetEarly).
