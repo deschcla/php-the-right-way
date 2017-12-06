@@ -40,17 +40,22 @@ _PHP: La bonne manière_ est (déjà) traduit en plusieurs langues :
 * [简体中文](http://laravel-china.github.io/php-the-right-way/)
 * [繁體中文](http://laravel-taiwan.github.io/php-the-right-way)
 
+## Livre
+
+La version la plus récente de _PHP: The Right Way_ (en) est aussi disponible au format PDF, EPUB et MOBI. [Voir sur Leanpub][1]
+
 ## Comment contribuer {#how-to-contribute}
 
 Aidez-nous à faire de ce site la meilleure ressource disponible
-pour les nouveaux programmeurs PHP. [Contribuer sur GitHub][1]
+pour les nouveaux programmeurs PHP. [Contribuer sur GitHub][2]
 
 ## Faites passer le mot! {#spread-the-word}
 
 _PHP: La bonne manière_ a des bannières que vous pouvez utiliser sur votre site. Montrez votre soutien au projet et
 faites connaître aux nouveaux développeurs PHP où trouver la bonne information !
 
-[Voir les bannières][2]
+[Voir les bannières][3]
 
-[1]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
-[2]: /php-the-right-way/banners.html
+[1]: https://leanpub.com/phptherightway
+[2]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
+[3]: /php-the-right-way/banners.html
