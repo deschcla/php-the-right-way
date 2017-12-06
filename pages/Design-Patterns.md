@@ -13,6 +13,7 @@ et de le rendre plus facile à lire pour les autres.
 
 * [Les patterns architecturaux sur Wikipédia](https://fr.wikipedia.org/wiki/Patron_d%27architecture)
 * [Les patrons de conceptions sur Wikipédia](https://fr.wikipedia.org/wiki/Patron_de_conception)
+* [Collection d'exemple d'implémentation](http://designpatternsphp.readthedocs.io/en/latest/) (en)
 
 ## Fabrique
 
