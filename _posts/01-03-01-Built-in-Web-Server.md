@@ -10,7 +10,9 @@ Vous pouvez commencer à apprendre PHP sans avoir à installer et configurer un 
 minimum PHP 5.4). Pour démarrer le serveur intégré, exécutez la ligne de commande suivante dans un terminal à la racine 
 de votre projet :
 
-    > php -S localhost:8000
+{% highlight console %}
+> php -S localhost:8000
+{% endhighlight %}
 
 * [Apprenez en plus sur l'outil en ligne de commandes][cli-server]
 
