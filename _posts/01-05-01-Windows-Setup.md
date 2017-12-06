@@ -21,10 +21,15 @@ entre stabilité et performance. Vous pouvez utiliser [phpmanager][phpmanager] q
 afin d'effectuer les configurations nécessaires pour faire tourner PHP. IIS7 intègre FastCGI prêt à l'emploi, vous 
 n'avez qu'à configurer PHP en tant qu'extension. Pour plus d'informations, visitez le site dédié sur [iis.net][php-iis].
 
+Généralement, faire tourner une application sur différents environnement de développement peut conduire à des comportements étranges ce qui peut être hasardeux une fois déployé en production. Si vous développez sous Windows mais que vos machines de production tournent sous Linux, vous feriez mieux de considérer l'utilisation de [machines virtuelles](/#virtualization_title).
+
+Il existe toutefois un excellent article en anglais écrit par Chris Tankersley sur les [outils à utiliser][windows-tools] si vous souhaitez travailler sous Windows.
+
 [php-downloads]: http://windows.php.net
 [phpmanager]: http://phpmanager.codeplex.com/
 [wpi]: http://www.microsoft.com/web/downloads/platform.aspx
 [zsce]: http://www.zend.com/fr/products/server/free-edition
-[xampp]: http://www.apachefriends.org/en/xampp.html
+[xampp]: https://www.apachefriends.org/fr/index.html
 [wamp]: http://www.wampserver.com/
 [php-iis]: http://php.iis.net/
+[windows-tools]: http://ctankersley.com/2016/11/13/developing-on-windows-2016/
