@@ -31,7 +31,7 @@ Un autre exemple est lorsque l'on passe des options à exécuter en ligne de com
 d'une commande.
 
 Un dernier exemple concerne le fait d'autoriser les entrées étrangères pour déterminer le fichier à télécharger depuis 
-le système de fichiers. Cela peut être exploiter en changeant le chemin vers le fichier. Vous devez supprimer 
+le système de fichiers. Cela peut être exploité en changeant le chemin vers le fichier. Vous devez supprimer 
 "/", "../", [les octets null][6] ou d'autres caractères du chemin de façon à empêcher le chargement de fichiers 
 cachés, privés ou contenant des données sensibles.
 
