@@ -24,7 +24,7 @@ anchor: resources
 
 ## Mentorat
 
-* [phpmentoring.org](http://phpmentoring.org/) - Encadrement et montée en compétences par des membres de la communauté
+* [phpmentoring.org](http://php-mentoring.org/) - Encadrement et montée en compétences par des membres de la communauté
 
 ## Fournisseurs PaaS pour PHP
 
