@@ -9,8 +9,7 @@ La communauté PHP est aussi diverse que large et de nombreux membres sont prêt
 N'hésitez pas à rejoindre un PHP User Group (PUG) ou à assister à des conférences sur PHP afin d'en apprendre plus sur 
 les meilleures pratiques. Vous pouvez aussi aller sur IRC, canal #phpc du serveur Freenode ([irc.freenode.com][php-irc]) 
 et suivre le compte twitter [@phpc][phpc-twitter]. Sortez, rencontrez d'autres développeurs PHP, apprenez de nouveaux 
-sujets et par dessus tout, faites vous des amis ! Ils existent d'autres ressources en ligne comme la page 
-[Google+ PHP][php-programmers-gplus] et [StackOverflow][php-so].
+sujets et par dessus tout, faites vous des amis ! Ils existent d'autres ressources en ligne comme la page [StackOverflow][php-so].
 
 [Voir le calendrier officiel des évènements PHP][php-calendar]
 
@@ -37,6 +36,5 @@ de la communauté PHP, c'est donc une excellente opportunité de rencontrer les 
 [php-wiki]: https://wiki.php.net/usergroups
 [php-conf]: http://php.net/conferences/index.php
 [phpc-twitter]: https://twitter.com/phpc
-[php-programmers-gplus]: https://plus.google.com/u/0/communities/104245651975268426012
 [php-irc]: http://webchat.freenode.net/?channels=phpc
 [php-so]: http://stackoverflow.com/questions/tagged/php
