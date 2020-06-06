@@ -25,21 +25,3 @@ anchor: resources
 ## Mentorat
 
 * [phpmentoring.org](http://php-mentoring.org/) - Encadrement et montée en compétences par des membres de la communauté
-
-## Fournisseurs PaaS pour PHP
-
-* [PagodaBox](https://pagodabox.com/)
-* [AppFog](https://appfog.com/)
-* [Heroku](https://heroku.com)
-  (Le support pour PHP n'est pas documenté mais est basé sur le partenariat  
-  avec Facebook : [lien](http://net.tutsplus.com/tutorials/php/quick-tip-deploy-php-to-heroku-in-seconds/))
-* [fortrabbit](http://fortrabbit.com/)
-* [Engine Yard Cloud](https://www.engineyard.com/products/cloud)
-* [Red Hat OpenShift Platform](http://openshift.com)
-* [dotCloud](http://docs.dotcloud.com/services/php/)
-* [AWS Elastic Beanstalk](http://aws.amazon.com/elasticbeanstalk/)
-* [cloudControl](https://www.cloudcontrol.com/)
-* [Windows Azure](http://www.windowsazure.com/)
-* [Zend Developer Cloud](http://www.phpcloud.com/develop)
-* [Google App Engine](https://developers.google.com/appengine/docs/php/gettingstarted/)
-* [Jelastic](http://jelastic.com/)
