@@ -49,13 +49,5 @@ La version la plus récente de _PHP: The Right Way_ (en) est aussi disponible au
 Aidez-nous à faire de ce site la meilleure ressource disponible
 pour les nouveaux programmeurs PHP. [Contribuer sur GitHub][2]
 
-## Faites passer le mot! {#spread-the-word}
-
-_PHP: La bonne manière_ a des bannières que vous pouvez utiliser sur votre site. Montrez votre soutien au projet et
-faites connaître aux nouveaux développeurs PHP où trouver la bonne information !
-
-[Voir les bannières][3]
-
 [1]: https://leanpub.com/phptherightway
 [2]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
-[3]: /php-the-right-way/banners.html
