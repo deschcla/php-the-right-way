@@ -1,10 +1,10 @@
 ---
-title: PHP PaaS Providers
+title: Fournisseurs PaaS pour PHP
 isChild: true
 anchor:  php_paas_providers
 ---
 
-## PHP PaaS Providers {#php_paas_providers_title}
+## Fournisseurs PaaS pour PHP {#php_paas_providers_title}
 
 * [AppFog](https://www.ctl.io/appfog/)
 * [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)
