@@ -6,7 +6,7 @@ anchor:  interacting_via_code
 
 ## Interagir avec les bases de données {#interacting_via_code_title}
 
-Quand les développeurs commencent à utiliser PHP, ils finissent souvent par mélanger le code métier avec celui gérant 
+Quand les développeurs commencent à utiliser PHP, ils finissent souvent par mélanger le code métier avec celui gérant
 la base de données et l'affichage, ce qui donne quelque chose de ce genre :
 
 {% highlight php %}
@@ -18,11 +18,11 @@ foreach ($db->query('SELECT * FROM table') as $row) {
 </ul>
 {% endhighlight %}
 
-Ceci est une mauvaise pratique pour toutes sortes de raisons, principalement dû au fait que le code est plus difficile à 
+Ceci est une mauvaise pratique pour toutes sortes de raisons, principalement dû au fait que le code est plus difficile à
 déboguer et à lire et qu'il est plus difficile de réaliser des tests.
 
-Bien qu'il existe un certain nombre de solutions pour parer à ce problème comme l'utilisation de la [POO](#programmation_oriente_objet) 
-ou bien la [programmation fonctionnelle](#programmation_fonctionnelle), les parties logiques de votre code doivent être 
+Bien qu'il existe un certain nombre de solutions pour parer à ce problème comme l'utilisation de la [POO](#programmation_oriente_objet)
+ou bien la [programmation fonctionnelle](#programmation_fonctionnelle), les parties logiques de votre code doivent être
 clairement délimitées.
 
 Considérez l'exemple suivant :
@@ -40,8 +40,8 @@ foreach (getAllFoos() as $row) {
 
 C'est un bon début. La séparation entre l'interaction avec la base de données et l'affichage est déjà bien distincte.
 
-Créez une classe où vous placerez les méthodes de votre code métier (votre "modèle"). Puis créez un fichier `.php` 
-qui contient la logique d'affichage (votre "vue") ce qui revient grosso-modo à utiliser le pattern [MVC] - un modèle 
+Créez une classe où vous placerez les méthodes de votre code métier (votre "modèle"). Puis créez un fichier `.php`
+qui contient la logique d'affichage (votre "vue") ce qui revient grosso-modo à utiliser le pattern [MVC] - un modèle
 d'architecture très courant dans la plupart des [frameworks](#frameworks_title).
 
 **foo.php**
@@ -89,11 +89,11 @@ class Foo()
 <? endforeach ?>
 {% endhighlight %}
 
-C'est l'essentiel de ce que font les frameworks de façon plus manuelle. Vous n'avez pas forcément besoin de l'utiliser 
-constamment mais mélanger la présentation et la logique métier peut être un réel casse-tête si vous devez ensuite 
+C'est l'essentiel de ce que font les frameworks de façon plus manuelle. Vous n'avez pas forcément besoin de l'utiliser
+constamment mais mélanger la présentation et la logique métier peut être un réel casse-tête si vous devez ensuite
 utiliser les [tests unitaires](/#unit-testing) dans votre application.
 
-[PHPBridge] contient un excellent tutoriel appellé [Creating a Data Class] qui couvre un sujet similaire à celui-ci et 
+[PHPBridge] contient un excellent tutoriel appellé [Creating a Data Class] qui couvre un sujet similaire à celui-ci et
 permet de bien s'imprégner du concept d'interaction avec les bases de données.
 
 [MVC]: http://code.tutsplus.com/tutorials/mvc-for-noobs--net-10488 (en)

@@ -5,21 +5,21 @@ anchor:  exceptions
 
 ## Exceptions {#exceptions_title}
 
-Les exceptions sont une partie standardisée dans la plupart des langages de programmation populaire mais elles sont 
+Les exceptions sont une partie standardisée dans la plupart des langages de programmation populaire mais elles sont
 souvent négligées par les programmeurs PHP. Les langages comme Ruby sont très fortement équipés pour gérer les exceptions.
-Ainsi, à chaque fois qu'une chose se passe mal comme l'échec d'une requête HTTP ou d'une requête à la BDD, Ruby (ou les 
+Ainsi, à chaque fois qu'une chose se passe mal comme l'échec d'une requête HTTP ou d'une requête à la BDD, Ruby (ou les
 "gems" utilisées) va lancer une exception à l'écran vous indiquant immédiatement qu'il y a eu une erreur.
 
-Le PHP en lui-même est plutôt laxiste avec ce type d'erreur, ainsi un appel à `file_get_contents()` va généralement 
-renvoyer un `FALSE` accompagné d'un avertissement. Beaucoup d'anciens frameworks PHP comme CodeIgniter vont juste 
-retourner `false`, enregistrer un message dans leur fichier de log et peut-être vous laisser utiliser une méthode 
-comme `$this->upload->get_error()` pour voir ce qu'il s'est mal passé. Le problème ici est que vous devez vous-même 
-chercher l'erreur et vérifier dans la doc ce qu'elle signifie pour cette fonction au lieu de l'avoir rendu évidente à 
+Le PHP en lui-même est plutôt laxiste avec ce type d'erreur, ainsi un appel à `file_get_contents()` va généralement
+renvoyer un `FALSE` accompagné d'un avertissement. Beaucoup d'anciens frameworks PHP comme CodeIgniter vont juste
+retourner `false`, enregistrer un message dans leur fichier de log et peut-être vous laisser utiliser une méthode
+comme `$this->upload->get_error()` pour voir ce qu'il s'est mal passé. Le problème ici est que vous devez vous-même
+chercher l'erreur et vérifier dans la doc ce qu'elle signifie pour cette fonction au lieu de l'avoir rendu évidente à
 comprendre.
 
-L'autre problème arrive lorsque les classes lancent automatiquement une erreur à l'écran et terminent le processus. Si 
-vous faites cela, un autre développeur ne sera plus capable de gérer cette erreur à l'exécution. Les exceptions 
-devraient être lancées afin d'avertir le développeur qu'une chose ne s'est pas passée comme prévu; ça devrait être à eux 
+L'autre problème arrive lorsque les classes lancent automatiquement une erreur à l'écran et terminent le processus. Si
+vous faites cela, un autre développeur ne sera plus capable de gérer cette erreur à l'exécution. Les exceptions
+devraient être lancées afin d'avertir le développeur qu'une chose ne s'est pas passée comme prévu; ça devrait être à eux
 de décider comment ils veulent gérer cela, par exemple:
 
 {% highlight php %}
@@ -49,7 +49,7 @@ finally
 
 ### Les exceptions SPL
 
-La classe générique `Exception` ne fournit pas un contexte intéressant pour le déboguage. Pour remédier à cela, il est 
+La classe générique `Exception` ne fournit pas un contexte intéressant pour le déboguage. Pour remédier à cela, il est
 possible de créer une sous-classe du type générique `Exception` :
 
 {% highlight php %}
@@ -57,12 +57,12 @@ possible de créer une sous-classe du type générique `Exception` :
 class ValidationException extends Exception {}
 {% endhighlight %}
 
-Cela vous permet d'ajouter plusieurs blocs `catch` et de gérer les exceptions différemment. Cela peut conduire à la 
-création de <em>beaucoup</em> de classes personnalisées qui aurait pu être évitées si les exceptions de la SPL avaient 
+Cela vous permet d'ajouter plusieurs blocs `catch` et de gérer les exceptions différemment. Cela peut conduire à la
+création de <em>beaucoup</em> de classes personnalisées qui aurait pu être évitées si les exceptions de la SPL avaient
 été utilisées avec l'[extension SPL][splext].
 
-Si par exemple vous utilisez la méthode magique `__call()` et qu'une méthode invalide est demandée alors, au lieu de lever 
-une exception standard vague ou d'utiliser une sous-classe personnalisée, vous pourriez tout simplement faire 
+Si par exemple vous utilisez la méthode magique `__call()` et qu'une méthode invalide est demandée alors, au lieu de lever
+une exception standard vague ou d'utiliser une sous-classe personnalisée, vous pourriez tout simplement faire
 `throw new BadFunctionCallException;`.
 
 * [En savoir plus sur les exceptions][exceptions]

@@ -7,7 +7,7 @@ anchor:  databases_abstraction_layers
 ## Couches d'abstraction {#databases_abstraction_layers_title}
 
 Pratiquement tous les frameworks contiennent leurs propres couches d'abstraction qui peut ou non se baser sur [PDO][1]. Il simule la plupart du temps les caractéristiques manquantes d'un système à l'autre en englobant vos requêtes dans des méthodes PHP vous donnant une réelle abstraction des données contrairement à PDO qui ne vous fournit que la partie connexion.
-Cela rajoute évidemment une surcouche mais si vous devez construire une application portable qui nécessite de travailler à la fois avec MySQL, PostgreSQL et/ou SQLite alors ce petit surplus ne sera pas de trop afin d'avoir un code plus maintenable. 
+Cela rajoute évidemment une surcouche mais si vous devez construire une application portable qui nécessite de travailler à la fois avec MySQL, PostgreSQL et/ou SQLite alors ce petit surplus ne sera pas de trop afin d'avoir un code plus maintenable.
 
 Certains couches d'abstraction ont été construites en utilisant la norme [PSR-0][psr0] ou [PSR-4][psr4] afin d'être utilisable par n'importe quelle application:
 

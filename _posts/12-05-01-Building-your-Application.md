@@ -6,12 +6,12 @@ anchor:  building_your_application
 
 ## Constuire et déployer votre application {#building_your_application_title}
 
-Si vous vous retrouvez à faire des changements sur le schéma de la base de données vous-même ou que vous exécutez vos 
-tests manuellement avant de mettre à jour vos fichiers (là aussi manuellement), vous devriez sans doute repenser votre 
-méthodologie de développement! Avec l'ensemble des étapes manuelles que vous devez réaliser pour déployer une 
-nouvelle version de votre application, il y a de fortes chances pour que des erreurs potentiellement fatales viennent 
-se glisser durant l'une des étapes. Que ce soit une simple mise à jour, un processus de construction et de déploiement 
-voir même une stratégie d'intégration continue, le [moteur de production](http://fr.wikipedia.org/wiki/Moteur_de_production) 
+Si vous vous retrouvez à faire des changements sur le schéma de la base de données vous-même ou que vous exécutez vos
+tests manuellement avant de mettre à jour vos fichiers (là aussi manuellement), vous devriez sans doute repenser votre
+méthodologie de développement! Avec l'ensemble des étapes manuelles que vous devez réaliser pour déployer une
+nouvelle version de votre application, il y a de fortes chances pour que des erreurs potentiellement fatales viennent
+se glisser durant l'une des étapes. Que ce soit une simple mise à jour, un processus de construction et de déploiement
+voir même une stratégie d'intégration continue, le [moteur de production](http://fr.wikipedia.org/wiki/Moteur_de_production)
  est votre ami.
 
 Parmi les tâches que vous pourriez vouloir automatiser, vous trouverez:
@@ -26,29 +26,29 @@ Parmi les tâches que vous pourriez vouloir automatiser, vous trouverez:
 
 ### Outil de construction automatique
 
-Les outils de contruction automatique ("build tools" en anglais) peuvent être souvent vus comme un ensemble de scripts 
-gérant les tâches les plus répétitives pour le déploiement d'un logiciel. Ils ne font généralement pas parti du logiciel 
+Les outils de contruction automatique ("build tools" en anglais) peuvent être souvent vus comme un ensemble de scripts
+gérant les tâches les plus répétitives pour le déploiement d'un logiciel. Ils ne font généralement pas parti du logiciel
 en lui-même, agissant ainsi depuis l'extérieur.
 
-Il existe beaucoup d'outils open-source disponibles pour vous aider à automatiser la construction de votre application, 
-certains étant même écrits en PHP. Cela ne devrait pas vous empêcher de les utiliser, si jamais ils correspondent mieux 
+Il existe beaucoup d'outils open-source disponibles pour vous aider à automatiser la construction de votre application,
+certains étant même écrits en PHP. Cela ne devrait pas vous empêcher de les utiliser, si jamais ils correspondent mieux
 au travail demandé. Voici quelques exemples:
 
-[Phing](http://www.phing.info/) est le moyen le plus facile pour commencer à utiliser le déploiement automatisé avec PHP. 
-Avec Phing, vous pouvez contrôler les processus de "packaging", de déploiement et d'exécution de tests à l'aide d'un 
-simple fichier XML. Phing (qui est basé sur [Apache Ant](http://ant.apache.org/)) fournit un riche ensemble de tâches 
-généralement nécessaires pour installer ou mettre à jour une application web et peut être amélioré avec l'ajout de 
+[Phing](http://www.phing.info/) est le moyen le plus facile pour commencer à utiliser le déploiement automatisé avec PHP.
+Avec Phing, vous pouvez contrôler les processus de "packaging", de déploiement et d'exécution de tests à l'aide d'un
+simple fichier XML. Phing (qui est basé sur [Apache Ant](http://ant.apache.org/)) fournit un riche ensemble de tâches
+généralement nécessaires pour installer ou mettre à jour une application web et peut être amélioré avec l'ajout de
 tâches personnalisées, écrit en PHP.
 
-[Capistrano](https://github.com/capistrano/capistrano/wiki) est un système pour les *programmeurs de niveau intermédiaire 
-à avancé* pour exécuter des commandes de façon structuré et répétable sur une ou plusieurs machines distantes. Il est 
-pré-configuré pour déployer des applications Ruby On Rails, cependant nombreux sont ceux à l'utiliser pour *déployer 
+[Capistrano](https://github.com/capistrano/capistrano/wiki) est un système pour les *programmeurs de niveau intermédiaire
+à avancé* pour exécuter des commandes de façon structuré et répétable sur une ou plusieurs machines distantes. Il est
+pré-configuré pour déployer des applications Ruby On Rails, cependant nombreux sont ceux à l'utiliser pour *déployer
 avec succès des applications PHP*. La bonne utilisation de Capistrano dépend de vos connaissances en Ruby et Rake.
 
-Le post du blog de Dave Gardner sur le [déploiement PHP avec Capistrano](http://www.davegardner.me.uk/blog/2012/02/13/php-deployment-with-capistrano/) 
+Le post du blog de Dave Gardner sur le [déploiement PHP avec Capistrano](http://www.davegardner.me.uk/blog/2012/02/13/php-deployment-with-capistrano/)
 est un bon point de départ pour les développeurs qui seraient intéressés.
 
-[Chef](http://www.opscode.com/chef/) est plus qu'un framework de déploiement basé sur Ruby car il peut aussi générer 
+[Chef](http://www.opscode.com/chef/) est plus qu'un framework de déploiement basé sur Ruby car il peut aussi générer
 l'ensemble de l'environnement de votre serveur ou de votre machine virtuelle.
 
 Les ressources sur Chef pour les développeurs PHP:
@@ -63,15 +63,15 @@ Allez plus loin:
 
 ### Intégration continue
 
-> L'intégration continue est une pratique en génie logiciel où les membres d'une équipe intègrent leurs travaux 
-> fréquemment, souvent plusieurs fois par jour. Beaucoup d'équipes trouvent que cette approche permet de réduire de 
+> L'intégration continue est une pratique en génie logiciel où les membres d'une équipe intègrent leurs travaux
+> fréquemment, souvent plusieurs fois par jour. Beaucoup d'équipes trouvent que cette approche permet de réduire de
 > façon significative les problèmes d'intégrations et ainsi permet un développement plus cohérent et rapide.
 
 *-- Martin Fowler*
 
-Il existe différents moyens pour faire de l'intégration continue en PHP. [Travis CI](https://travis-ci.org/) a récemment 
-fait un excellent travail pour faire de l'intégration continue une réalité et ce même pour de petits projets. Travis 
-CI est un service hébergé d'intégration continue pour la communauté open-source. IL est intégré à Github et offre un 
+Il existe différents moyens pour faire de l'intégration continue en PHP. [Travis CI](https://travis-ci.org/) a récemment
+fait un excellent travail pour faire de l'intégration continue une réalité et ce même pour de petits projets. Travis
+CI est un service hébergé d'intégration continue pour la communauté open-source. IL est intégré à Github et offre un
 support de haut niveau pour de nombreux langages (incluant PHP).
 
 Allez plus loin:
